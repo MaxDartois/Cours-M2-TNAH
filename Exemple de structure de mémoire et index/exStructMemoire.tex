@@ -1,0 +1,148 @@
+% document vide aux normes de l'école pour le mémoire
+
+% PREAMBULE
+
+%package obligatoire : type de document
+\documentclass[a4paper,12pt,twoside]{book}
+% encodage
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+
+% le package hyperref avec des options
+\usepackage[pdfusetitle, pdfsubject ={Mémoire TNAH}, pdfkeywords={les mots-clés}]{hyperref}
+
+%il faut mettre au moins une langue
+\usepackage[english,french]{babel}
+
+% configurer le document selon les normes de l'école
+\usepackage[margin=2.5cm]{geometry} %marges
+\usepackage{setspace} % espacement qui permet ensuite de définir un interligne
+\onehalfspacing % interligne de 1.5
+\setlength\parindent{1cm} % indentation des paragraphes à 1 cm
+
+\usepackage{lettrine} % lettrines (pas obligatoire)
+
+
+% bibliographie, ce qu'on verra à la prochaine séance
+%\usepackage[backend=biber, sorting=nyt, style=enc]{biblatex}
+%\addbibresource{biblio.bib}
+%\nocite{*}
+
+%si index, package pour index + makeindex
+
+% + toutes la liste des packages nécessaires à votre document (si images, tableaux, schémas, etc.)
+
+\author{Prénom Nom - M2 TNAH}
+\title{Titre du mémoire}
+
+% DOCUMENT
+\begin{document}
+	\frontmatter
+	\begin{titlepage}
+		\begin{center}
+			
+			\bigskip
+			
+			\begin{large}
+				\'ECOLE NATIONALE DES CHARTES
+			\end{large}
+			\begin{center}\rule{2cm}{0.02cm}\end{center}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\begin{Large}
+				\textbf{Prénom Nom}\\
+			\end{Large}
+		%selon le cas
+			\begin{normalsize} \textit{licencié.e ès lettres}\\
+				\textit{diplômé.e de master}
+			\end{normalsize}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			\begin{Huge}
+				\textbf{TITRE DU MÉMOIRE}\\
+			\end{Huge}
+			\bigskip
+			\bigskip
+			\begin{LARGE}
+				\textbf{SOUS-TITRE DU MÉMOIRE}\\
+			\end{LARGE}
+			
+			\bigskip
+			\bigskip
+			\bigskip
+			\begin{large}
+			\end{large}
+			\vfill
+			
+			\begin{large}
+				Mémoire 
+				pour le diplôme de master \\
+				\og{} Technologies numériques appliquées à l'histoire \fg{} \\
+				\bigskip
+				2019
+			\end{large}
+			
+		\end{center}
+	\end{titlepage}
+	
+	\thispagestyle{empty}	
+	\cleardoublepage
+	
+	\chapter*{Résumé}
+	\addcontentsline{toc}{chapter}{Résumé}
+	\medskip
+	Résumé du mémoire en français. Cette page ne doit pas dépasser une page.\\
+	
+	\textbf{Mots-clés~:} une liste de mots-clés~; séparés par des points-virgules.
+	
+	\textbf{Informations bibliographiques~:} Prénom Nom, \textit{Titre du mémoire. Sous-titre du mémoire}, mémoire de master \og{}Technologies numériques appliquées à l'histoire\fg{}, dir. [Noms des directeurs], École nationale des chartes, 2019.
+	
+	\chapter*{Remerciements}
+	\addcontentsline{toc}{chapter}{Remerciements}
+	
+	\lettrine{M}es remerciements vont tout d'abord à\dots
+	
+	%bibliographie ici
+	%\printbibliography
+	
+	\chapter*{Introduction}
+	\addcontentsline{toc}{chapter}{Introduction}
+	
+	\thispagestyle{empty}
+	\cleardoublepage
+	
+	\mainmatter
+	
+	% là, le corps du mémoire, généralement trois parties
+	\part{Une partie}
+	
+	\chapter{Un chapitre}
+	\chapter{Un autre chapitre}
+	
+	\part{Une autre partie}
+	
+	%etc.
+	
+	
+	\chapter*{Conclusion}
+	\addcontentsline{toc}{chapter}{Conclusion}
+	
+	\appendix
+	\part*{Annexes}	
+	\addcontentsline{toc}{part}{Annexes}
+	
+	\backmatter
+% index à mettre ici si index	
+%	\printindex
+
+% si figures
+%	\listoffigures
+
+	\tableofcontents
+	
+\end{document}

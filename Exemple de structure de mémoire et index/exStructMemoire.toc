@@ -1,0 +1,10 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Résumé}{iii}{chapter*.1}
+\contentsline {chapter}{Remerciements}{v}{chapter*.2}
+\contentsline {chapter}{Introduction}{vii}{chapter*.3}
+\contentsline {part}{I\hspace {1em}Une partie}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Un chapitre}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Un autre chapitre}{5}{chapter.2}
+\contentsline {part}{II\hspace {1em}Une autre partie}{7}{part.2}
+\contentsline {chapter}{Conclusion}{9}{chapter*.4}
+\contentsline {part}{Annexes}{13}{part*.5}

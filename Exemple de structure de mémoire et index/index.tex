@@ -1,0 +1,43 @@
+% exemple de création de plusieurs index
+
+% PREAMBULE
+
+%package obligatoire : type de document
+\documentclass[a4paper,12pt,twoside]{article}
+% encodage
+\usepackage[utf8]{inputenc}
+
+%création d'index
+% on utilise le package imakeidx avec une option qui permet la création de plusieurs index, spliindex
+\usepackage[splitindex]{imakeidx}
+%pour chaque index, on exécute une commande makeindex : donc ici une par défaut, une pour les lieux
+\makeindex
+% index des lieux : le nom est ce à quoi il va falloir se référer à chaque entrée d'index, le titre est le titre qui apparaît dans le pdf
+\makeindex[name=lieux,title=Index des noms de lieux]
+
+\title{Création de plusieurs index}
+\date{22 novembre 2018}
+
+% DOCUMENT
+\begin{document}
+	
+\maketitle
+
+	
+	Il est possible de créer plusieurs index avec \LaTeX. Il suffit pour cela de créer autant de commandes \texttt{\textbackslash makeindex} que l'on souhaite créer d'index, et d'attribuer à chacun un nom différent, auquel il faut renvoyer lors de la création des références et entrées d'index dans le cours du document, création réalisée à l'aide de la commande \texttt{\textbackslash{}index}.\\
+	
+	Ici, nous avons créé un index classique avec~: \texttt{\textbackslash makeindex} et un index des noms de lieux avec~: \texttt{\textbackslash makeindex[name=lieux, title=Index des noms de lieux]} dans le préambule. Lorsque nous voulons créer une entrée d'index pour le premier index, nous utilisons la commande simple \texttt{\textbackslash index\{\}}, et lorsque nous voulons en créer une pour l'index des noms de lieux, nous utilisons la commande \texttt{\textbackslash index[lieux]\{\}}.\\
+	
+	Attention~:
+	\begin{itemize}
+		\item bien observer ce que l'on a mis dans le préambule\index[lieux]{préambule} %on voit ici qu'on fait une entrée d'index, avec la comande "\index" et entre accolades, l'entrée de l'index. Puisqu'il s'agit ici de l'index spécifique "lieux", on indique entre crochets le nom de l'index "lieux" 
+		du document \texttt{.tex}
+		\item bien regarder comment sont ici créées les entrées\index{entrées} des index\index{index} % ici, deux entrées dans l'index sans spécificités
+		\item ne pas oublier d'afficher les index avec les commandes \texttt{\textbackslash printindex} et \texttt{\textbackslash printindex[lieux]}.
+	\end{itemize}
+	
+	%on oubli pas les commandes pour afficher successivement les deux index
+	\printindex
+	\printindex[lieux]
+	
+\end{document}
