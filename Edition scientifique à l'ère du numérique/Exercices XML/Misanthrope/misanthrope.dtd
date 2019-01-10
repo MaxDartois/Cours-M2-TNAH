@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!ELEMENT piece (titre*, acte*, scene*, casting*, tourDeParole*, didascalie*, vers*) >
+<!ELEMENT titre (#PCDATA | acte | scene | tourDeParole | vers)* >
+<!ELEMENT acte (#PCDATA | titre | scene | tourDeParole | vers)* >
+<!ELEMENT scene (#PCDATA | titre | casting | tourDeParole | didascalie | vers)* >
+<!ELEMENT casting (#PCDATA) >
+<!ELEMENT tourDeParole (#PCDATA | didascalie)* >
+<!ELEMENT didascalie (#PCDATA)* >
+<!ELEMENT vers (#PCDATA) >
+
+
+<!ATTLIST titre type (acte | scene) #REQUIRED >
+
+
+
+

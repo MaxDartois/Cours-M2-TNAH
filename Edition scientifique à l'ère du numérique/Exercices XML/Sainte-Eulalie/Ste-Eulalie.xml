@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!DOCTYPE TEI[
+<!ENTITY pbarre-pre '<choice><abbr>&#58981;</abbr><expan>pre</expan></choice>'>
+<!ENTITY pbarre-per '<choice><abbr>&#0070;</abbr><expan>per</expan></choice>'>
+<!ENTITY nbarre-non '<choice><abbr>&#241;</abbr><expan>non</expan></choice>'>
+<!ENTITY uv '<choice><orig>u</orig><reg>v</reg></choice>'>
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">« In hoc corpore continentur libri octo Gregorii Nazanzeni episcopi,
+               id est Apologeticus lib. I ; de epifanis sive de natali Domini lib. I ; de luminibus
+               vel secundis epifanis lib. I ; de Pentecosten vel Spiritu sancto lib. I ; in
+               semetipso de agro regressus, lib. I ; de Hieremia dicta praesente imperatore, apud
+               quem intercedit pro quodam periclitante, lib. I ; de reconciliatione monachi, lib. I
+               ; de grandinis vastatione, cum pater episcopus reticeret, lib. I. »</title>
+            <title type="subtitle">Séquence de Sainte-Eulalie</title>
+            <title type="subject">Apologeticus et homiliae octo</title>
+            <author resp="anonymous">Inconnu</author>
+            <author resp="transcriber">traduction de Rufin</author>
+            <editor>Hélène Dartois</editor>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'un exercice du Master TNAH</resp>
+               <persName>
+                  <forename>Hélène</forename>
+                  <surname>Dartois</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Gallica</publisher>
+            <date>02/04/2012</date>
+            <distributor facs="ark:/12148/btv1b84526286">Bibliothèque nationale de
+               France</distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Valenciennes</settlement>
+                  <repository>Bibliothèque municipale de Valenciennes</repository>
+                  <idno>Ms.150</idno>
+                  <altIdentifier>
+                     <idno>Ms. 143</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <msContents>
+                  <msItemStruct>
+                     <locus>f. 141v</locus>
+                     <author>Inconnu</author>
+                     <title>Cantilène romane de Ste Eulalie</title>
+                     <incipit>Buona pulcella fut Eulalia.</incipit>
+                     <explicit>Par souue clementia.</explicit>
+                     <textLang mainLang="fro">Ancien français</textLang>
+                  </msItemStruct>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>parchemin</support>
+                        <extent>
+                           <width unit="mm">237</width>
+                           <height unit="mm">150</height>
+                        </extent>
+                        <foliation>143 feuillets</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="24"/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <bindingDesc>
+                     <p>Reliure en peau non apprêtée</p>
+                  </bindingDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <facsimile>
+      <surface>
+         <graphic url="SainteEulalie.jpeg" width="994px" height="1566px"/>
+         <zone xml:id="l1" ulx="167" uly="75" lrx="945" lry="155"/>
+         <zone xml:id="l2" ulx="167" uly="159" lrx="936" lry="197"/>
+         <zone xml:id="l3" ulx="167" uly="199" lrx="944" lry="245"/>
+         <zone xml:id="l4" ulx="171" uly="254" lrx="956" lry="290"/>
+         <zone xml:id="l5" ulx="174" uly="294" lrx="953" lry="352"/>
+         <zone xml:id="l6" ulx="176" uly="360" lrx="928" lry="410"/>
+         <zone xml:id="l7" ulx="179" uly="418" lrx="936" lry="447"/>
+         <zone xml:id="l8" ulx="188" uly="459" lrx="956" lry="513"/>
+         <zone xml:id="l9" ulx="191" uly="522" lrx="962" lry="548"/>
+         <zone xml:id="l10" ulx="189" uly="562" lrx="960" lry="598"/>
+         <zone xml:id="l11" ulx="189" uly="602" lrx="967" lry="644"/>
+         <zone xml:id="l12" ulx="188" uly="658" lrx="966" lry="715"/>
+         <zone xml:id="l13" ulx="189" uly="722" lrx="969" lry="748"/>
+         <zone xml:id="l14" ulx="187" uly="770" lrx="954" lry="820"/>
+         <zone xml:id="l15" ulx="308" uly="824" lrx="641" lry="857"/>
+      </surface>
+   </facsimile>
+
+   <text>
+      <front>
+         <note>
+            <p>Les parties entre crochets droits sont, dans le texte original, indiquées par un
+               tilde ou une autre marque d’abréviation. Ainsi, le mot dom est noté dõ ; Mireille
+               Huchon, dans son Histoire de la langue française, transcrit dõ par deo. C’est aussi
+               une possibilité ; quelques mots contractés ont été séparés pour faciliter la lecture
+               ; le texte original est tracé en minuscule caroline assez lisible. Le début de chaque
+               vers est marqué par une lettre capitale en rustica ;</p>
+            <p>on note l’utilisation du digramme ancien cz pour /ts/ dans czo /tso/, forme
+               pronominale, « cela », issue du latin ecc(e) hoc. Plus tard, le z du digramme donnera
+               naissance à la cédille : on aurait donc alors ço (comparer avec le français moderne
+               ça) ;</p>
+            <p>les vers sont écrits deux à deux par ligne ; pour des raisons de lisibilité, chacun
+               est suivi d’un retour à la ligne ;</p>
+            <p>la traduction se veut littérale, afin de mieux montrer les liens historiques entre
+               les mots romans et français ; il est donc normal qu’elle semble parfois difficile
+               d'accès ; il suffit de prendre pour chaque mot son acception étymologique (coulpe : «
+               péché », chef : « tête », siècle : « vie dans le monde », figure : « forme »,
+               ministère : « service », merci : « pitié », etc.), de se souvenir que le sujet peut
+               ne pas être exprimé et que l’ordre des mots est plus souple (Veut le siècle laisser :
+               « Elle veut laisser le siècle », etc.).</p>
+         </note>
+      </front>
+      <body>
+         <head>Séquence de la vie de Sainte-Eulalie</head>
+         <div>
+            <lg>
+               <pb facs="ark:/12148/btv1b84526286"/>
+               <lb/>
+               <l facs="#l1">Buona pulcella fut Eulalia. Bel avret corps bellezour anima.</l>
+               <lb/>
+               <l facs="#l2">Voldrent la veintre li <choice>
+                     <abbr>dõ</abbr>
+                     <expan>d<ex>e</ex>o</expan>
+                  </choice> inimi.Voldrent la faire diavle servir. </l>
+               <lb/>
+               <l facs="#l3">Elle nont eskoltet les mals conselliers. Quelle <choice>
+                     <abbr>dõ</abbr>
+                     <expan>d<ex>e</ex>o</expan>
+                  </choice> raneiet chi maent <hi rend="suscript">sus en ciel.</hi>
+               </l>
+               <lb/>
+               <l facs="#l4">Ne por or ned argent ne paramenz. Por manatce regiel ne preiement.</l>
+               <lb/>
+               <l facs="#l5">Niule cose non la pouret omq<choice>
+                     <abbr>omq</abbr>
+                     <expan>omq<ex>ue</ex></expan>
+                  </choice>pleier. La polle sempre &nbarre-non;amast lo <choice>
+                     <abbr>dõ</abbr>
+                     <expan>d<ex>e</ex>o</expan>
+                  </choice> menestier.</l>
+               <lb/>
+               <l facs="#l6">E por[ ]o fut &pbarre-pre;sentede maximiien. Chi rex eret a cels dis
+                  soure pagiens.</l>
+               <lb/>
+               <l facs="#l7">Il[ ]li enortet dont lei nonq<choice>
+                     <abbr>nonq</abbr>
+                     <expan>nonq<ex>ue</ex></expan>
+                  </choice> chielt. Qued elle fuiet lo nom <hi rend="suscrit">xp<choice>
+                        <abbr>xp</abbr>
+                        <expan>xp<ex>ist</ex>iien</expan>
+                     </choice>iien.</hi>
+               </l>
+               <lb/>
+               <l facs="#l8">Ellent adunet lo suon element. Melz sostendreiet les empedementz.</l>
+               <lb/>
+               <l facs="#l9">Quelle &pbarre-per;desse sa virginitet. Por[ ]os suret morte a grand honestet. </l>
+               <lb/>
+               <l facs="#l10">Enz enl fou lo getterent com arde tost. Elle colpes avret por[ ]o <hi
+                     rend="interligne">nos coist.</hi></l>
+               <lb/>
+               <l facs="#l11">A[ ]czo nos voldret concreidre li rex pagiens. Ad une spede li roveret
+                     <hi rend="suscrit">tolir lo chief.</hi></l>
+               <lb/>
+               <l facs="#l12">La domnizelle celle kose &nbarre-non; contredist. Volt lo seule
+                  lazsier si ruovet <hi rend="suscrit"> krist.</hi></l>
+               <lb/>
+               <l facs="#l13">In figure de colomb volat a ciel. Tuit oram que por[ ]nos degnet
+                  preier. </l>
+               <lb/>
+               <l facs="#l14">Qued avuisset de nos <choice>
+                     <abbr>xrs</abbr>
+                     <expan>xr<ex>[istu]</ex>s</expan>
+                  </choice> mercit Post la mort &amp; a[ ]lui nos laist venir.</l>
+               <lb/>
+               <l facs="#l15" rend="center">Par souue clementia.</l>
+               <lb/>
+            </lg>
+         </div>
+      </body>
+   </text>
+</TEI>

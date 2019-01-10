@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!DOCTYPE TEI[
+<!ENTITY et-tironien '<choice><abbr>&#8266;</abbr><expan>et</expan></choice>'>
+<!ENTITY neuf-tironien '<choice><abbr>&#42863;</abbr><expan>com</expan></choice>'>
+<!ENTITY y-pointe '<choice><abbr>&#7823;</abbr><expan>y</expan></choice>'>
+<!ENTITY p-barre '<choice><abbr>&#42833;</abbr><expan>par</expan></choice>'>
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Recueil de textes , Vie de saints</title>
+            <title type="subtitle">Vie de Sainte Euphrasie</title>
+            <author resp="anonymous">Inconnu</author>
+            <editor>Hélène Dartois</editor>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre d'un exercice du Master TNAH</resp>
+               <persName>
+                  <forename>Hélène</forename>
+                  <surname>Dartois</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Gallica</publisher>
+            <date>21/03/2012</date>
+            <distributor facs="ark:/12148/btv1b84259980">Bibliothèque nationale de
+               France</distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>Français 412</idno>
+                  <altIdentifier>
+                     <idno>Lancelot 135</idno>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Regius 7019(3)</idno>
+                  </altIdentifier>
+               </msIdentifier>
+
+               <head>
+                  <title>Recueil de textes , Vie de saints</title>
+                  <origDate>1285</origDate>
+                  <note> Contient : 1° Calendrier en latin, comprenant le « Compost » ; 2° Légendes
+                     de saints ; 3° « Li Bestiaires » ou « Arriere ban » de « mestre RICHART [de
+                     Fournival] ; 4° « La Response sour l'Arriere ban maistre Richart de Furnival
+                     »</note>
+               </head>
+
+               <msContents>
+                  <msItemStruct>
+                     <locus>f. 224vb - f. 225vb</locus>
+                     <author>Inconnu</author>
+                     <title>Vie de Sainte Euphrasie</title>
+                     <incipit>seinte glesre des cieus amen. Ici co(.)</incipit>
+                     <explicit> ele auoit de seruie en terre. Ici con()</explicit>
+                     <textLang mainLang="fro" otherLangs="oil">Ancien français</textLang>
+                  </msItemStruct>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Velin</support>
+                        <extent>
+                           <width unit="mm">245</width>
+                           <height unit="mm">330</height>
+                        </extent>
+                        <foliation>245 folios</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46"/>
+                     </layoutDesc>
+                  </objectDesc>
+               </physDesc>
+
+               <history>
+                  <origin>Nord de la France, Pays-Bas méridionaux ou Champagne</origin>
+                  <provenance>
+                     <p>La notice JONAS nous apprend que le manuscrit Français 412 a eu 3
+                        possesseurs:Tanguy du Chatel (hypothétique), Jacques d'Armagnac duc de
+                        Nemours dont le blason est sur la tranche du livre et enfin, Antoine
+                        Lancelot qui l'a acheté à la vente du château d'Anet en 1724. Le manuscrit
+                        entre à la Bibliothèque nationale avec les mss de Lancelot en 1732.</p>
+                     <listBibl>
+                        <bibl>
+                           <author>Eugenio Burgio</author>
+                           <title>Schede bibliografiche sulla tradizione delle versioni
+                              antico-francesi dei 'Dialogi' di Gregorio Magno, I 'Dialogi' di
+                              Gregorio Magno. Tradizione del testo e antiche traduzioni,</title>
+                           <pubPlace>Archivum gregorianum, Firenze</pubPlace>
+                           <publisher>Edizioni del Galluzzo / Sismel</publisher>
+                           <date>2006</date>
+                        </bibl>
+                        <bibl>
+                           <author>Keith Busby</author>
+                           <title>Codex and Context. Reading Old French Verse Narrative in
+                              Manuscript</title>
+                           <pubPlace> New York</pubPlace>
+                           <publisher>Rodopi,</publisher>
+                           <date>2002</date>
+                        </bibl>
+                        <bibl>
+                           <author>Anne-Françoise Leurquin, Françoise Féry-Hue, Sylvie Lefèvre,
+                              Maria Careri, Gillette Labory, Geneviève Hasenohr, Christine Ruby et
+                              Françoise Gasparri,</author>
+                           <title>Album de manuscrits français du 13e siècle : mise en page et mise
+                              en texte</title>
+                           <pubPlace>Rome</pubPlace>
+                           <publisher>Viella</publisher>
+                           <date>2001</date>
+                        </bibl>
+                        <bibl>
+                           <author>Paolo Chiesa</author>
+                           <title>I “Dialogi” di Gregorio Magno. Tradizione del testo e antiche
+                              traduzioni</title>
+                           <pubPlace>Florence</pubPlace>
+                           <publisher>Sismel, Edizioni del Galluzzo</publisher>
+                           <date>2006</date>
+                        </bibl>
+                        <bibl>
+                           <author>Martine Clouzot</author>
+                           <title>Le jongleur, mémoire de l'image au Moyen Age : figures,
+                              figurations et musicalité dans les manuscrits enluminés
+                              (1200-1330)</title>
+                           <pubPlace>Berne</pubPlace>
+                           <publisher>P. Lang</publisher>
+                           <date>2011</date>
+                        </bibl>
+                        <bibl>
+                           <author>Nathalie Coilly et Marie-Hélène Tesnière,</author>
+                           <title>Le Roman de la Rose. L'art d'aimer au Moyen Âge</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Bibliothèque nationale de France</publisher>
+                           <date>2012</date>
+                        </bibl>
+                        <bibl>
+                           <author>Martina Di Febo</author>
+                           <title> Les versions en prose du Purgatoire de saint Patrice en ancien
+                              français</title>
+                           <pubPlace> Paris</pubPlace>
+                           <publisher>Champion</publisher>
+                           <date>2013</date>
+                        </bibl>
+                        <bibl>
+                           <author>Ludmilla Evdokimova</author>
+                           <title>Disposition des lettrines dans les manuscrits du Bestiaire d'amour
+                              et sa composition : des lectures possibles de l'oeuvre, Le Moyen
+                              Age</title>
+                           <date>1996</date>
+                        </bibl>
+                        <bibl>
+                           <author>Ludmilla Evdokimova</author>
+                           <title>Disposition des lettrines dans les manuscrits du Bestiaire d'amour
+                              et sa composition : des lectures possibles de l'oeuvre, Le Moyen
+                              Age</title>
+                           <date>1996-1997</date>
+                        </bibl>
+                        <bibl>
+                           <author>Christopher Lucken</author>
+                           <title> Les manuscrits du Bestiaire d'Amours de Richard de Fournival, Le
+                              recueil au Moyen Âge, le Moyen Âge central.</title>
+                           <pubPlace>Turnhout</pubPlace>
+                           <publisher>Brepols</publisher>
+                           <date>2010</date>
+                        </bibl>
+                        <bibl>
+                           <author>Molly Lynde-Recchia</author>
+                           <title> Wauchier de Denain. La vie seint Marcel de Lymoges</title>
+                           <pubPlace>Genève</pubPlace>
+                           <publisher>Droz</publisher>
+                           <date>2005</date>
+                        </bibl>
+                        <bibl>
+                           <author>Paul Meyer</author>
+                           <title>Notice sur le manuscrit 307 (ancien 851) de la bibliothèque
+                              d'Arras, recueil de vies de saints en prose et en vers,
+                              Romania</title>
+                           <date>1888</date>
+                        </bibl>
+                        <bibl>
+                           <author>Paul Meyer</author>
+                           <title>Légendes hagiographiques en français. II. Légendes en prose,
+                              Histoire littéraire de la France</title>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1906</date>
+                        </bibl>
+                        <bibl>
+                           <author>Paul Meyer</author>
+                           <title>Versions en vers et en prose des Vies des Pères, Histoire
+                              littéraire de la France</title>
+                           <date>1906</date>
+                        </bibl>
+                        <bibl>
+                           <author>Eric George Millar</author>
+                           <title>The parisian miniaturist Honoré</title>
+                           <date>1959</date>
+                        </bibl>
+                        <bibl>
+                           <author>Paulin Paris</author>
+                           <title>Les manuscrits françois de la bibliothèque du roy</title>
+                           <pubPlace>Paris</pubPlace>
+                           <date>1836-1848</date>
+                        </bibl>
+                        <bibl>
+                           <author>Alison Stones</author>
+                           <title> A Note on the Maître au menton fuyant, Als ich can. Liber
+                              Amicorum in Memory of Professor Dr. Maurits Smeyers / Bert CARDON, Jan
+                              VAN DER STOCK &amp; Dominique VANWIJNSBERGHE (éds.), Corpus of
+                              Illuminated Manuscripts</title>
+                           <pubPlace>Louvain</pubPlace>
+                           <publisher>Peeters</publisher>
+                           <date>2002</date>
+                        </bibl>
+                        <bibl>
+                           <author>Alison Stones</author>
+                           <title>Gothic Manuscripts 1260-1320</title>
+                           <pubPlace>London</pubPlace>
+                           <publisher>Harvey Miller</publisher>
+                           <date>2013</date>
+                        </bibl>
+                        <bibl>
+                           <author>Dominique Vanwijnsberghe</author>
+                           <title>De fin or et d'azur. Les commanditaires de livres et le métier de
+                              l'enluminure à Tournai à la fin du Moyen Age (XIV-XVe siècles),
+                              Manuscripts in Transition. Recycling Manuscripts, Texts and Images,
+                              Corpus of Illuminated Manuscripts</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Peeters</publisher>
+                           <date>2001</date>
+                        </bibl>
+                        <bibl>
+                           <title>L'Art au temps des rois maudits. Philippe le Bel et ses fils :
+                              1285-1328</title>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher> Réunion des Musées Nationaux</publisher>
+                           <date>1998</date>
+                        </bibl>
+                        <bibl>
+                           <author>Fabio Zinelli</author>
+                           <title>"Au carrefour des traditions italiennes et méditerranéennes. Un
+                              légendier français et ses rapports avec l'histoire ancienne jusqu'à
+                              César et les Fait des romains", Extrait de L'agiografia volgare.
+                              Tradizioni di testi, motivi e linguaggi. Atti del congresso
+                              internazionale, Klagenfurt, 15-16 gennaio 2015</title>
+                           <pubPlace>Heidelberg</pubPlace>
+                           <publisher>Universitätsverlag</publisher>
+                           <date>2016</date>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <facsimile>
+      <surface>
+         <graphic url="Euphrasie1.jpeg" width="1024px" height="1527px"/>
+         <zone xml:id="l1" ulx="651" uly="1130" lrx="963" lry="1147"/>
+         <zone xml:id="l2" ulx="653" uly="1151" lrx="965" lry="1175"/>
+      </surface>
+      <surface>
+         <graphic url="Euphrasie2.jpeg" width="1024px" height="1525px"/>
+         <zone xml:id="entete1" ulx="263" uly="69" lrx="581" lry="108"/>
+         <zone xml:id="l3" ulx="324" uly="170" lrx="419" lry="195"/>
+         <zone xml:id="l4" ulx="323" uly="196" lrx="412" lry="217"/>
+         <zone xml:id="l5" ulx="323" uly="217" lrx="414" lry="237"/>
+         <zone xml:id="l6" ulx="324" uly="238" lrx="412" lry="257"/>
+         <zone xml:id="l7" ulx="326" uly="260" lrx="414" lry="278"/>
+         <zone xml:id="l8" ulx="326" uly="278" lrx="412" lry="298"/>
+         <zone xml:id="l9" ulx="327" uly="298" lrx="414" lry="319"/>
+         <zone xml:id="l10" ulx="327" uly="321" lrx="411" lry="343"/>
+         <zone xml:id="l11" ulx="326" uly="344" lrx="412" lry="364"/>
+         <zone xml:id="l12" ulx="329" uly="365" lrx="406" lry="386"/>
+         <zone xml:id="l13" ulx="104" uly="388" lrx="424" lry="410"/>
+         <zone xml:id="l14" ulx="103" uly="411" lrx="402" lry="430"/>
+         <zone xml:id="l15" ulx="103" uly="431" lrx="414" lry="456"/>
+         <zone xml:id="l16" ulx="103" uly="458" lrx="411" lry="477"/>
+         <zone xml:id="l17" ulx="103" uly="477" lrx="412" lry="500"/>
+         <zone xml:id="l18" ulx="100" uly="502" lrx="409" lry="518"/>
+         <zone xml:id="l19" ulx="102" uly="519" lrx="414" lry="541"/>
+         <zone xml:id="l20" ulx="102" uly="542" lrx="407" lry="564"/>
+         <zone xml:id="l21" ulx="100" uly="566" lrx="401" lry="585"/>
+         <zone xml:id="l22" ulx="101" uly="586" lrx="401" lry="610"/>
+         <zone xml:id="l23" ulx="102" uly="612" lrx="400" lry="632"/>
+         <zone xml:id="l24" ulx="102" uly="632" lrx="402" lry="650"/>
+         <zone xml:id="l25" ulx="100" uly="654" lrx="415" lry="673"/>
+         <zone xml:id="l26" ulx="100" uly="674" lrx="410" lry="697"/>
+         <zone xml:id="l27" ulx="99" uly="698" lrx="398" lry="719"/>
+         <zone xml:id="l28" ulx="100" uly="718" lrx="402" lry="736"/>
+         <zone xml:id="l29" ulx="99" uly="739" lrx="402" lry="761"/>
+         <zone xml:id="l30" ulx="97" uly="762" lrx="403" lry="785"/>
+         <zone xml:id="l31" ulx="97" uly="784" lrx="404" lry="801"/>
+         <zone xml:id="l32" ulx="98" uly="800" lrx="404" lry="826"/>
+         <zone xml:id="l33" ulx="94" uly="828" lrx="401" lry="848"/>
+         <zone xml:id="l34" ulx="97" uly="848" lrx="411" lry="868"/>
+         <zone xml:id="l35" ulx="100" uly="869" lrx="408" lry="892"/>
+         <zone xml:id="l36" ulx="98" uly="891" lrx="410" lry="916"/>
+         <zone xml:id="l37" ulx="95" uly="918" lrx="407" lry="934"/>
+         <zone xml:id="l38" ulx="97" uly="934" lrx="402" lry="957"/>
+         <zone xml:id="l39" ulx="97" uly="957" lrx="404" lry="978"/>
+         <zone xml:id="l40" ulx="98" uly="980" lrx="401" lry="1000"/>
+         <zone xml:id="l41" ulx="97" uly="1002" lrx="404" lry="1023"/>
+         <zone xml:id="l42" ulx="98" uly="1024" lrx="395" lry="1044"/>
+         <zone xml:id="l43" ulx="98" uly="1044" lrx="389" lry="1066"/>
+         <zone xml:id="l44" ulx="98" uly="1066" lrx="403" lry="1089"/>
+         <zone xml:id="l45" ulx="97" uly="1090" lrx="393" lry="1110"/>
+         <zone xml:id="l46" ulx="98" uly="1109" lrx="393" lry="1131"/>
+         <zone xml:id="l47" ulx="97" uly="1132" lrx="393" lry="1153"/>
+         <zone xml:id="l48" ulx="98" uly="1150" lrx="403" lry="1174"/>
+      </surface>
+      <surface>
+         <graphic url="Euphrasie2.jpeg" width="1024px" height="1525px"/>
+         <zone xml:id="l49" ulx="492" uly="125" lrx="770" lry="202"/>
+         <zone xml:id="l50" ulx="491" uly="200" lrx="764" lry="224"/>
+         <zone xml:id="l51" ulx="490" uly="219" lrx="763" lry="243"/>
+         <zone xml:id="l52" ulx="490" uly="238" lrx="767" lry="264"/>
+         <zone xml:id="l53" ulx="488" uly="258" lrx="764" lry="285"/>
+         <zone xml:id="l54" ulx="487" uly="280" lrx="763" lry="303"/>
+         <zone xml:id="l55" ulx="487" uly="304" lrx="766" lry="325"/>
+         <zone xml:id="l56" ulx="486" uly="326" lrx="764" lry="349"/>
+         <zone xml:id="l57" ulx="485" uly="345" lrx="769" lry="370"/>
+         <zone xml:id="l58" ulx="484" uly="371" lrx="763" lry="392"/>
+         <zone xml:id="l59" ulx="484" uly="392" lrx="766" lry="416"/>
+         <zone xml:id="l60" ulx="483" uly="412" lrx="767" lry="438"/>
+         <zone xml:id="l61" ulx="484" uly="433" lrx="770" lry="461"/>
+         <zone xml:id="l62" ulx="479" uly="460" lrx="770" lry="484"/>
+         <zone xml:id="l63" ulx="478" uly="481" lrx="768" lry="503"/>
+         <zone xml:id="l64" ulx="477" uly="503" lrx="769" lry="522"/>
+         <zone xml:id="l65" ulx="480" uly="523" lrx="770" lry="547"/>
+         <zone xml:id="l66" ulx="479" uly="544" lrx="767" lry="573"/>
+         <zone xml:id="l67" ulx="476" uly="568" lrx="767" lry="587"/>
+         <zone xml:id="l68" ulx="477" uly="589" lrx="766" lry="610"/>
+         <zone xml:id="l69" ulx="478" uly="609" lrx="760" lry="631"/>
+         <zone xml:id="l70" ulx="480" uly="635" lrx="754" lry="649"/>
+         <zone xml:id="l71" ulx="478" uly="651" lrx="761" lry="673"/>
+         <zone xml:id="l72" ulx="476" uly="675" lrx="764" lry="696"/>
+         <zone xml:id="l73" ulx="476" uly="697" lrx="756" lry="714"/>
+         <zone xml:id="l74" ulx="477" uly="714" lrx="766" lry="736"/>
+         <zone xml:id="l75" ulx="478" uly="736" lrx="758" lry="760"/>
+         <zone xml:id="l76" ulx="474" uly="759" lrx="760" lry="780"/>
+         <zone xml:id="l77" ulx="472" uly="782" lrx="759" lry="802"/>
+         <zone xml:id="l78" ulx="471" uly="807" lrx="770" lry="828"/>
+         <zone xml:id="l79" ulx="471" uly="830" lrx="752" lry="845"/>
+         <zone xml:id="l80" ulx="472" uly="850" lrx="761" lry="869"/>
+         <zone xml:id="l81" ulx="468" uly="872" lrx="753" lry="891"/>
+         <zone xml:id="l82" ulx="470" uly="894" lrx="760" lry="912"/>
+         <zone xml:id="l83" ulx="468" uly="917" lrx="753" lry="931"/>
+         <zone xml:id="l84" ulx="469" uly="933" lrx="757" lry="956"/>
+         <zone xml:id="l85" ulx="467" uly="958" lrx="745" lry="978"/>
+         <zone xml:id="l86" ulx="470" uly="983" lrx="750" lry="999"/>
+         <zone xml:id="l87" ulx="465" uly="1006" lrx="754" lry="1022"/>
+         <zone xml:id="l88" ulx="467" uly="1026" lrx="748" lry="1043"/>
+         <zone xml:id="l89" ulx="468" uly="1047" lrx="748" lry="1067"/>
+         <zone xml:id="l90" ulx="462" uly="1070" lrx="749" lry="1086"/>
+         <zone xml:id="l91" ulx="462" uly="1092" lrx="746" lry="1104"/>
+         <zone xml:id="l92" ulx="463" uly="1110" lrx="749" lry="1126"/>
+         <zone xml:id="l93" ulx="463" uly="1130" lrx="748" lry="1146"/>
+         <zone xml:id="l94" ulx="464" uly="1152" lrx="745" lry="1171"/>
+      </surface>
+      <surface>
+         <graphic url="Euphrasie3.jpeg" width="1024px" height="1527px"/>
+         <zone xml:id="entete2" ulx="311" uly="59" lrx="958" lry="136"/>
+         <zone xml:id="l95" ulx="251" uly="141" lrx="557" lry="195"/>
+         <zone xml:id="l96" ulx="256" uly="202" lrx="553" lry="213"/>
+         <zone xml:id="l97" ulx="256" uly="221" lrx="553" lry="235"/>
+         <zone xml:id="l98" ulx="260" uly="241" lrx="558" lry="258"/>
+         <zone xml:id="l99" ulx="260" uly="263" lrx="557" lry="279"/>
+         <zone xml:id="l100" ulx="259" uly="281" lrx="573" lry="301"/>
+         <zone xml:id="l101" ulx="258" uly="305" lrx="573" lry="321"/>
+         <zone xml:id="l102" ulx="255" uly="322" lrx="567" lry="341"/>
+         <zone xml:id="l103" ulx="263" uly="344" lrx="565" lry="364"/>
+         <zone xml:id="l104" ulx="259" uly="366" lrx="562" lry="386"/>
+         <zone xml:id="l105" ulx="258" uly="389" lrx="559" lry="409"/>
+         <zone xml:id="l106" ulx="261" uly="413" lrx="559" lry="432"/>
+         <zone xml:id="l107" ulx="262" uly="431" lrx="564" lry="451"/>
+         <zone xml:id="l108" ulx="264" uly="454" lrx="564" lry="477"/>
+         <zone xml:id="l109" ulx="266" uly="479" lrx="563" lry="498"/>
+         <zone xml:id="l110" ulx="266" uly="500" lrx="570" lry="520"/>
+         <zone xml:id="l111" ulx="265" uly="523" lrx="566" lry="540"/>
+         <zone xml:id="l112" ulx="265" uly="539" lrx="561" lry="564"/>
+         <zone xml:id="l113" ulx="266" uly="566" lrx="562" lry="585"/>
+         <zone xml:id="l114" ulx="268" uly="587" lrx="563" lry="612"/>
+         <zone xml:id="l115" ulx="266" uly="613" lrx="562" lry="630"/>
+         <zone xml:id="l116" ulx="268" uly="637" lrx="566" lry="653"/>
+         <zone xml:id="l117" ulx="267" uly="658" lrx="571" lry="675"/>
+         <zone xml:id="l118" ulx="273" uly="678" lrx="566" lry="692"/>
+         <zone xml:id="l119" ulx="274" uly="698" lrx="572" lry="716"/>
+         <zone xml:id="l120" ulx="272" uly="719" lrx="564" lry="740"/>
+         <zone xml:id="l121" ulx="274" uly="740" lrx="564" lry="761"/>
+         <zone xml:id="l122" ulx="272" uly="761" lrx="570" lry="784"/>
+         <zone xml:id="l123" ulx="271" uly="784" lrx="574" lry="803"/>
+         <zone xml:id="l124" ulx="271" uly="805" lrx="578" lry="827"/>
+         <zone xml:id="l125" ulx="271" uly="829" lrx="574" lry="848"/>
+         <zone xml:id="l126" ulx="273" uly="850" lrx="579" lry="872"/>
+         <zone xml:id="l127" ulx="274" uly="872" lrx="573" lry="893"/>
+         <zone xml:id="l128" ulx="276" uly="897" lrx="567" lry="912"/>
+         <zone xml:id="l129" ulx="279" uly="915" lrx="568" lry="935"/>
+         <zone xml:id="l130" ulx="278" uly="937" lrx="572" lry="955"/>
+         <zone xml:id="l131" ulx="277" uly="958" lrx="575" lry="980"/>
+         <zone xml:id="l132" ulx="280" uly="983" lrx="573" lry="1005"/>
+         <zone xml:id="l133" ulx="278" uly="1007" lrx="570" lry="1024"/>
+         <zone xml:id="l134" ulx="280" uly="1025" lrx="572" lry="1044"/>
+         <zone xml:id="l135" ulx="280" uly="1046" lrx="571" lry="1070"/>
+         <zone xml:id="l136" ulx="278" uly="1069" lrx="573" lry="1088"/>
+         <zone xml:id="l137" ulx="281" uly="1089" lrx="583" lry="1110"/>
+         <zone xml:id="l138" ulx="280" uly="1111" lrx="574" lry="1128"/>
+         <zone xml:id="l139" ulx="282" uly="1131" lrx="585" lry="1149"/>
+         <zone xml:id="l140" ulx="283" uly="1154" lrx="574" lry="1170"/>
+      </surface>
+      <surface>
+         <graphic url="Euphrasie3.jpeg" width="1024px" height="1527px"/>
+         <zone xml:id="l141" ulx="631" uly="129" lrx="936" lry="201"/>
+         <zone xml:id="l142" ulx="631" uly="196" lrx="941" lry="223"/>
+         <zone xml:id="l143" ulx="633" uly="215" lrx="931" lry="237"/>
+         <zone xml:id="l144" ulx="631" uly="237" lrx="935" lry="257"/>
+         <zone xml:id="l145" ulx="633" uly="258" lrx="939" lry="278"/>
+         <zone xml:id="l146" ulx="633" uly="276" lrx="932" lry="302"/>
+         <zone xml:id="l147" ulx="634" uly="298" lrx="933" lry="323"/>
+         <zone xml:id="l148" ulx="636" uly="323" lrx="932" lry="346"/>
+         <zone xml:id="l149" ulx="636" uly="340" lrx="932" lry="367"/>
+         <zone xml:id="l150" ulx="639" uly="361" lrx="931" lry="387"/>
+         <zone xml:id="l151" ulx="639" uly="388" lrx="930" lry="411"/>
+         <zone xml:id="l152" ulx="639" uly="409" lrx="933" lry="435"/>
+         <zone xml:id="l153" ulx="639" uly="431" lrx="939" lry="458"/>
+         <zone xml:id="l154" ulx="638" uly="456" lrx="937" lry="478"/>
+         <zone xml:id="l155" ulx="639" uly="476" lrx="936" lry="502"/>
+         <zone xml:id="l156" ulx="640" uly="497" lrx="936" lry="524"/>
+         <zone xml:id="l157" ulx="641" uly="521" lrx="940" lry="546"/>
+         <zone xml:id="l158" ulx="641" uly="544" lrx="935" lry="571"/>
+         <zone xml:id="l159" ulx="643" uly="569" lrx="933" lry="585"/>
+         <zone xml:id="l160" ulx="643" uly="587" lrx="939" lry="611"/>
+         <zone xml:id="l161" ulx="641" uly="610" lrx="940" lry="630"/>
+         <zone xml:id="l162" ulx="642" uly="631" lrx="939" lry="656"/>
+         <zone xml:id="l163" ulx="642" uly="652" lrx="937" lry="672"/>
+         <zone xml:id="l164" ulx="645" uly="674" lrx="941" lry="693"/>
+         <zone xml:id="l165" ulx="644" uly="697" lrx="938" lry="716"/>
+         <zone xml:id="l166" ulx="646" uly="717" lrx="942" lry="739"/>
+         <zone xml:id="l167" ulx="647" uly="737" lrx="942" lry="762"/>
+         <zone xml:id="l168" ulx="647" uly="759" lrx="945" lry="783"/>
+         <zone xml:id="l169" ulx="647" uly="784" lrx="946" lry="802"/>
+         <zone xml:id="l170" ulx="647" uly="803" lrx="934" lry="826"/>
+         <zone xml:id="l171" ulx="647" uly="827" lrx="942" lry="848"/>
+         <zone xml:id="l172" ulx="646" uly="850" lrx="933" lry="870"/>
+         <zone xml:id="l173" ulx="646" uly="870" lrx="942" lry="891"/>
+         <zone xml:id="l174" ulx="647" uly="892" lrx="944" lry="913"/>
+         <zone xml:id="l175" ulx="647" uly="915" lrx="951" lry="936"/>
+         <zone xml:id="l176" ulx="647" uly="936" lrx="938" lry="956"/>
+         <zone xml:id="l177" ulx="649" uly="955" lrx="933" lry="977"/>
+         <zone xml:id="l178" ulx="649" uly="979" lrx="943" lry="1000"/>
+         <zone xml:id="l179" ulx="650" uly="1001" lrx="936" lry="1018"/>
+         <zone xml:id="l180" ulx="653" uly="1020" lrx="939" lry="1041"/>
+         <zone xml:id="l181" ulx="654" uly="1045" lrx="943" lry="1063"/>
+         <zone xml:id="l182" ulx="653" uly="1063" lrx="941" lry="1081"/>
+         <zone xml:id="l183" ulx="654" uly="1085" lrx="949" lry="1104"/>
+         <zone xml:id="l184" ulx="654" uly="1107" lrx="948" lry="1124"/>
+         <zone xml:id="l185" ulx="654" uly="1132" lrx="949" lry="1147"/>
+      </surface>
+   </facsimile>
+
+   <text>
+      <body>
+         <pb xml:id="folio-224vb"/>
+         <cb type="right"/>
+         <lg>
+            <l facs="#l1">seinte glesre des cieus amen. Ici co<choice>
+                  <abbr>'</abbr>
+                  <expan>m</expan>
+               </choice></l>
+            <l facs="#l2">mence la uie de madame se<choice>
+                  <abbr>i</abbr>
+                  <expan>in</expan>
+               </choice>te Eufrase</l>
+         </lg>
+         <pb xml:id="folio-225r"/>
+         <div>
+            <lg>
+               <l facs="#entete1">EUFRASE</l>
+            </lg>
+         </div>
+         <div>
+            <cb type="left"/>
+            <lg>
+               <l facs="#l3"> Rome ot un</l>
+               <l facs="#l4"> senat qi ot</l>
+               <l facs="#l5"> non antigo</l>
+               <l facs="#l6"> nus . &et-tironien; estoit</l>
+               <l facs="#l7"> molt boene</l>
+               <l facs="#l8"> hom &et-tironien; cre-</l>
+               <l facs="#l9"> moit molt</l>
+               <l facs="#l10"> nostre sig-</l>
+               <l facs="#l11"> neur. &et-tironien; a</l>
+               <l facs="#l12"> uoit une</l>
+               <l facs="#l13"> feme.haute dame qi auoit non Eufrase.</l>
+               <l facs="#l14"> Cele estoit molt bone feme. &et-tironien; fesoit molt</l>
+               <l facs="l15"> de bien por nostre signor.&et-tironien; aloit uolen<choice>
+                     <abbr>t</abbr>
+                     <expan>te</expan>
+                  </choice>s</l>
+               <l facs="#l16"> a seinte egl&y-pointe;se. il orent une fille. &et-tironien; li
+                  mis</l>
+               <l facs="#l17"> tient non Eufraise aussint &neuf-tironien;me sa mere:</l>
+               <l facs="#l18" part="I">Antigonus dist un ior a sa feme.</l>
+            </lg>
+            <lg>
+               <l facs="#l18" part="F"> Dame</l>
+               <l facs="#l19"> ne ses tu qe ceste uie est bries. &et-tironien; nos au<choice>
+                     <abbr>o</abbr>
+                     <expan>on</expan>
+                  </choice>s</l>
+               <l facs="#l20"> gastez nos iorz en uein.gietons nos des</l>
+               <l facs="#l21"> terriens uices qe nos ne perdons le ce</l>
+               <l facs="#l22"> le<choice>
+                     <abbr>t</abbr>
+                     <expan>ter</expan>
+                  </choice>nel regne. Bien nos sosfist une fille</l>
+               <l facs="#l23"> que nos auons. detenons nos li uns</l>
+               <l facs="#l24"> de lautre.qe nos puissons estre pur a</l>
+               <l facs="#l25" part="I"> ueus les eslux nostre signor.</l>
+            </lg>
+            <lg>
+               <l facs="#l25" part="F"> Qant la da</l>
+               <l facs="#l26"> me oi ce elle ot molt grant ioie &et-tironien; rendi</l>
+               <l facs="#l27" part="I"> graces a nostre signor &et-tironien; dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l27" part="F"> Beneoiz</l>
+               <l facs="#l28"> soit dex qi ta amene ala conoissance</l>
+               <l facs="#l29"> de uerite. Meintes foiz ai prie nostre</l>
+               <l facs="#l30"> signor de ce mes ie ne le cosai onqes</l>
+               <l facs="#l31" part="I"> manifester. </l>
+            </lg>
+            <lg>
+               <l facs="#l31" part="F"> Apres ce Antigonus de</l>
+               <l facs="#l32"> parti as poures grant partie de son a-</l>
+               <l facs="#l33"> uoir &et-tironien; morut en cel an .Il &et-tironien; sa feme</l>
+               <l facs="#l34"> uesquirent ensemble .ii. anz. &et-tironien;. vi . mo-</l>
+               <l facs="#l35"> is.&et-tironien; furent un des anz en continance.</l>
+               <l facs="#l36"> Qant Antigonus fu morz: li em<choice>
+                     <abbr>pe</abbr>
+                     <expan>pereu</expan>
+                  </choice>res</l>
+               <l facs="#l37"> fist prometre a la fille a la dame que</l>
+               <l facs="#l38"> ele prenderoit mari un riche bacheler</l>
+               <l facs="#l39"> de Rome. &et-tironien; ele n auoit qe v anz.qant</l>
+               <l facs="#l40"> ele otroia le mariage. Apres ce sa me- </l>
+               <l facs="#l41"> re l amena en eg&y-pointe;pte ou ele auoit <choice>
+                     <abbr>gnt</abbr>
+                     <expan>grant</expan>
+                  </choice></l>
+               <l facs="#l42"> terre de par son pere. Qant eles fu-</l>
+               <l facs="#l43"> rent en eg&y-pointe;pte eles trouerent une</l>
+               <l facs="#l44"> abeie de noneins qi estoient molt se<choice>
+                     <abbr>i</abbr>
+                     <expan>in</expan>
+                  </choice>-</l>
+               <l facs="#l45"> tes femes. &et-tironien; les genz en disoient molt</l>
+               <l facs="#l46"> grant bien. Elles ne beuoient pas de</l>
+               <l facs="#l47"> uin. Lor uiande estoit une foiz l'eun</l>
+               <l facs="#l48"> autre foi chous. Les unes satenoi<choice>
+                     <abbr>e</abbr>
+                     <expan>en</expan>
+                  </choice>t</l>
+            </lg>
+         </div>
+         <div>
+            <cb type="right"/>
+            <lg>
+               <l facs="#l49"> ii ioiz de mengier les autre iii elles</l>
+               <l facs="#l50"> nauoient nule cure de lor cors .Chascu-</l>
+               <l facs="#l51"> ne gisoit seur une heire. &et-tironien; lor uesteure</l>
+               <l facs="#l52"> estoit de heire. &et-tironien; se aucune cheoit en en-</l>
+               <l facs="#l53"> fermete ele neust aide qe de deu. Nules</l>
+               <l facs="#l54"> deles nissoit fors des portes. mes il i a</l>
+               <l facs="#l55"> uoit une portiere qi parloit a ceus qi</l>
+               <l facs="#l56"> uenoient defors. Nostre sires fesoit</l>
+               <l facs="#l57"> leenz meins miracles por le se<choice>
+                     <abbr>in</abbr>
+                     <expan>inc</expan>
+                  </choice>te c<choice>
+                     <abbr>o</abbr>
+                     <expan>on</expan>
+                  </choice></l>
+               <l facs="#l58"> uersation. Qant eufraise sot la <choice>
+                     <abbr>gnt</abbr>
+                     <expan>grant</expan>
+                  </choice></l>
+               <l facs="#l59"> abstinence des seintes u<choice>
+                     <abbr>i</abbr>
+                     <expan>ie</expan>
+                  </choice>rges ele ﻿&p-barre;la</l>
+               <l facs="#l60" part="I"> a labeesse: &et-tironien; li dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l60" part="F"> Dame ie doing a cest</l>
+               <l facs="#l61"> leu por bene<choice>
+                     <abbr>i</abbr>
+                     <expan>dic</expan>
+                  </choice>ton .xx.liures dor.qe uos</l>
+               <l facs="#l62"> proiez por moi &et-tironien; por ceste or<choice>
+                     <abbr>t</abbr>
+                     <expan>ter</expan>
+                  </choice>enine qi est</l>
+               <l facs="#l63" part="I"> ma fille &et-tironien; por l ame son pere.</l>
+            </lg>
+            <lg>
+               <l facs="#l63" part="F"> &et-tironien; l abeesse</l>
+               <l facs="#l64" part="I"> li respondi.</l>
+            </lg>
+            <lg>
+               <l facs="#l64" part="F"> Nos ne uolons auoir en cest</l>
+               <l facs="#l65"> siecle nule terriene chose qe nos ne per-</l>
+               <l facs="#l66"> dons le celestiel reigne: mes se tu ueuz</l>
+               <l facs="#l67"> auoir le loier d osfrende. osfre cire ou</l>
+               <l facs="#l68"> huile au mostier. Apres dist l abeesse</l>
+               <l facs="#l69"> a l enfant aussi ꝯme par geu. Pucele</l>
+               <l facs="#l70"> remandras tu aueus nos por ueoir</l>
+               <l facs="#l71" part="I"> nostre conuersation.</l>
+            </lg>
+            <lg>
+               <l facs="#l71" part="F">&et-tironien; la pucele dist:</l>
+            </lg>
+            <lg>
+               <l facs="#l72"> Se ma mere ne s en corrocoit: ie niste</l>
+               <l facs="#l73" part="I"> roie i ames de ceenz.</l>
+            </lg>
+            <lg>
+               <l facs="#l73" part="F">&et-tironien; l abeesse li dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l74" part="I">aimes nos tu plus qe ton mari</l>
+            </lg>
+            <lg>
+               <l facs="#l74" part="F"> &et-tironien; la</l>
+               <l facs="#l75" part="I"> pucele dist:</l>
+            </lg>
+            <lg>
+               <l facs="#l75" part="F"> il ne me conut onques ne</l>
+               <l facs="#l76" part="I"> ie lui.</l>
+            </lg>
+            <lg>
+               <l facs="#l76" part="F"> Qant la mere oi ce: ele comen-</l>
+               <l facs="#l77" part="I"> ca a plorer de pitie &et-tironien; dist. </l>
+            </lg>
+            <lg>
+               <l facs="#l77" part="F"> Bele fille al<choice>
+                     <abbr>o</abbr>
+                     <expan>on</expan>
+                  </choice>s</l>
+               <l facs="#l78"> a l ostel que il auesprist &et-tironien; ele dist a li. ﻿Je</l>
+               <l facs="#l79" part="I"> remanrai aueuc l abeesse. </l>
+            </lg>
+            <lg>
+               <l facs="#l79" part="F"> &et-tironien; l abeesse</l>
+               <l facs="#l80" part="I"> li dist: </l>
+            </lg>
+            <lg>
+               <l facs="#l80" part="F"> Tu ne puez ceenz remanoir se</l>
+               <l facs="#l81" part="I"> tu ne te uoes a iesu crist.</l>
+            </lg>
+            <lg>
+               <l facs="#l81" part="F"> &et-tironien; ele dist ou</l>
+               <l facs="#l82" part="I"> est iesu crist. </l>
+            </lg>
+            <lg>
+               <l facs="#l82" part="F"> &et-tironien; l abeesse li mostra douce-</l>
+               <l facs="#l83"> ment une &y-pointe;mage en la semblance</l>
+               <l facs="#l84"> iesu crist. &et-tironien; la pucele corut &et-tironien; besa l
+                  &y-pointe;ma-</l>
+               <l facs="#l85" part="I"> ge &et-tironien; dist. </l>
+            </lg>
+            <lg>
+               <l facs="#l85" part="F"> Ie me ueu a iesu crist. ne ie-</l>
+               <l facs="#l86" part="I"> nirai plus aueuc ma dame. </l>
+            </lg>
+            <lg>
+               <l facs="#l86" part="F"> &et-tironien; l abeesse</l>
+               <l facs="#l87" part="I"> dist</l>
+            </lg>
+            <lg>
+               <l facs="#l87" part="F"> Beaus sire rois des cieus otroie</l>
+               <l facs="#l88"> a ceste pucele qe ele uiue selont tes co-</l>
+               <l facs="#l89" part="I"> maudemenz. </l>
+            </lg>
+            <lg>
+               <l facs="#l89" part="F"> &et-tironien; lors la desuesti de sa ro-</l>
+               <l facs="#l90"> be &et-tironien; li uesti robe de nonein. La mere</l>
+               <l facs="#l91"> besa sa fille &et-tironien; issi de la beie. &et-tironien; a la par
+                  les</l>
+               <l facs="#l92"> uoisins mostiers fesant ses aumosnes</l>
+               <l facs="#l93"> &et-tironien; aussint as poures &et-tironien; as orfenins.
+                  &et-tironien; ge-</l>
+               <l facs="#l94"> unoit toz les iorz des qa uespres. &et-tironien; ne </l>
+            </lg>
+         </div>
+         <pb xml:id="folio-225vb"/>
+         <div>
+            <lg>
+               <l facs="#entete2">EUFRASE</l>
+            </lg>
+         </div>
+         <div>
+            <cb type="right"/>
+            <lg>
+               <l facs="#l95"> Mengoit seleun non Du chous Ne</l>
+               <l facs="#l96"> demora gueres que ele reuint en l abeie</l>
+               <l facs="#l97" part="I"> &et-tironien; l abeesse l apela &et-tironien; li dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l97" part="F"> Eufraise escote</l>
+               <l facs="#l98"> une auision qe ie ai ueue en ceste nuit. Je</l>
+               <l facs="#l99"> ui Antigonam ton baron en grant gloire</l>
+               <l facs="#l100"> Et prioit nostre seignor que il te gardast</l>
+               <l facs="#l101" part="I"> de cest monde.</l>
+            </lg>
+            <lg>
+               <l facs="#l101" part="F"> Qant Eufraise oi ce ele</l>
+               <l facs="#l102" part="I"> eut ioie.&et-tironien; dist a sa fille:</l>
+            </lg>
+            <lg>
+               <l facs="#l102" part="F"> Bele fille pr<choice>
+                     <abbr>e</abbr>
+                     <expan>end</expan>
+                  </choice></l>
+               <l facs="#l103"> toute la substance ton pere &et-tironien; de part</l>
+               <l facs="#l104"> Tout as poures qe nous &et-tironien; il aions</l>
+               <l facs="#l105"> eritage es cieus.&et-tironien; ne di pas del linage</l>
+               <l facs="#l106"> le roi. mes faitoi poure en terre qe tu</l>
+               <l facs="#l107" part="I"> soies riche es cieus. </l>
+            </lg>
+            <lg>
+               <l facs="#l107" part="F"> De ce &et-tironien; d autres cho-</l>
+               <l facs="#l108"> ses amonesta ele sa fille &et-tironien; morut au ti-</l>
+               <l facs="#l109"> erz ior. Qant li empereres oi qe sa cou-</l>
+               <l facs="#l110"> sine estoit morte. il manda a sa fille que</l>
+               <l facs="#l111"> ele sen uenist a son mari. Qant eufrase.</l>
+               <l facs="#l112"> la pucele oi ce ele &neuf-tironien;menca a sorrire &et-tironien;
+                  dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l113"> Lesserai ie iesu crist &et-tironien; irai a un home qe</l>
+               <l facs="#l114"> uer mengeront qi est hui &et-tironien; demein ne</l>
+               <l facs="#l115" part="I"> sera pas.</l>
+            </lg>
+            <lg>
+               <l facs="#l115" part="F"> Cele manda par cez meismes</l>
+               <l facs="#l116"> messages a lempereor. qe il departeist as</l>
+               <l facs="#l117"> poures loi aument tote la substance son</l>
+               <l facs="#l118"> pere &et-tironien; sa mere: car ele sestoit donee a ie-</l>
+               <l facs="#l119"> su crist.&et-tironien; le uoloit seruir sanz empeece-</l>
+               <l facs="#l120"> ment de terrienes choses. Eufrase si</l>
+               <l facs="#l121"> nauoit qe.xii. anz: qant ele comenca</l>
+               <l facs="#l122"> a laborer el seruice nostre signor iesu crist.</l>
+               <l facs="#l123"> Au comencement geuna des qa uespres.</l>
+               <l facs="#l124"> apres comenca a geuner par.ii.iorz. ele</l>
+               <l facs="#l125"> fesoit tote seule les liz as sereurs: &et-tironien; por</l>
+               <l facs="#l126"> toit toz les loiz leue a la cuisine. &et-tironien; fesoit</l>
+               <l facs="#l127"> tote seule qan quil auoit leenz a fere.La</l>
+               <l facs="#l128"> costume de labeie estoit tele.qe qant.</l>
+               <l facs="#l129"> aucune des sereurs estort temptee en</l>
+               <l facs="#l130"> son dormant: ele recontoit sa tempta-</l>
+               <l facs="#l131"> tion a labeesse.&et-tironien; ele prioit por li &et-tironien; li
+                  cou-</l>
+               <l facs="#l132"> mandoit qe ele meist pierres en son lit</l>
+               <l facs="#l133"> &et-tironien; geust sus: tant qe li deables se de par-</l>
+               <l facs="#l134"> te sist de li. Eufraise fu temptee une</l>
+               <l facs="#l135"> nuit. &et-tironien; ele mist les pierres en son lit
+                  &et-tironien;</l>
+               <l facs="#l136" part="I"> qant labeesse le sot ele li dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l136" part="F"> porqoi ne</l>
+               <l facs="#l137"> me deis tuta temptation. &et-tironien; le priasce por</l>
+               <l facs="#l138"> toi. tu as comencie a combatre. sostien</l>
+               <l facs="#l139"> forment la bataille qe tu puisses uein-</l>
+               <l facs="#l140" part="I"> cre. &et-tironien; estre coronee es cieus.</l>
+            </lg>
+            <lg>
+               <l facs="#l140" part="F">Autre foiz</l>
+            </lg>
+         </div>
+         <div>
+            <cb type="left"/>
+            <lg>
+               <l facs="#l141"> fu temptee Eusraise.que illi estoit luis</l>
+               <l facs="#l142"> qe ses mariz le uoloit geter fois de labeie</l>
+               <l facs="#l143"> &et-tironien; ele cria si haut qe totes les sereurs sen.</l>
+               <l facs="#l144"> esueillierent: &et-tironien; labeesse la conforta molt</l>
+               <l facs="#l145"> par douces paroles. Les sereurs amoi<choice>
+                     <abbr>e</abbr>
+                     <expan>en</expan>
+                  </choice>t</l>
+               <l facs="#l146"> molt eufraise. por sa grant obedience.</l>
+               <l facs="#l147"> mes une de les auoit molt grant en-</l>
+               <l facs="#l148"> uie uers li &et-tironien; dist meintes fois mal de</l>
+               <l facs="#l149"> li par derriers. Cele dist une foiz que</l>
+               <l facs="#l150"> Eufraise uoloit tot ce fere qe labeesse</l>
+               <l facs="#l151"> fesoit: car ele ne mengoit qe une foiz</l>
+               <l facs="#l152"> la semeine. &et-tironien; uoloit estre abeesse apres</l>
+               <l facs="#l153"> li. Qant labeesse le sot ele chastia cele</l>
+               <l facs="#l154" part="I"> &et-tironien; li dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l154" part="F"> Que ta forfet eufraise: tu seu</l>
+               <l facs="#l155"> le li portes enuie. &et-tironien; li uieuz fere lessier</l>
+               <l facs="#l156"> son seint proposement. qe ne te penses</l>
+               <l facs="#l157"> tu qe ele seule fu nee de la lignie lem-</l>
+               <l facs="#l158"> pereor. si est si humeliee qe ele te sert</l>
+               <l facs="#l159" part="I"> por deu. </l>
+            </lg>
+            <lg>
+               <l facs="#l159" part="F"> Un ior ala eufraise au puis:</l>
+               <l facs="#l160"> &et-tironien; li deables la fist trebuchier dedens.
+                  &et-tironien;</l>
+               <l facs="#l161"> ele &neuf-tironien;menea a crier iesu crist aide
+                  moi.&et-tironien;</l>
+               <l facs="#l162"> les sereurs corurent la &et-tironien; le trestrent fors</l>
+               <l facs="#l163"> &et-tironien; ele not onqes point de mal: &et-tironien; se seig-</l>
+               <l facs="#l164" part="I"> na lors &et-tironien; dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l164" part="F"> Du piesmes deables me</l>
+               <l facs="#l165"> cuides ueintre mes iete ueinterai. Ie</l>
+               <l facs="#l166"> ne soloie porter a la cuisine. qe plein sel</l>
+               <l facs="#l167"> le deue. dore en auant en i porterai II</l>
+            </lg>
+            <lg>
+               <l facs="#l168"> Eufraise sumelia plus assez de lors qe</l>
+               <l facs="#l169"> ele nauoit fet deuant car ele geunoit</l>
+               <l facs="#l170"> plus. &et-tironien; plus ueilloit en orissons. Et</l>
+               <l facs="#l171"> nostre sires fesoit meinz miracles por</l>
+               <l facs="#l172"> li. Yne nuit uit labeesse une a uision</l>
+               <l facs="#l173"> de li. &et-tironien; la reconta as sereurs &et-tironien; lor
+                  dist.</l>
+            </lg>
+            <lg>
+               <l facs="#l174"> Ie ui messages qi uindrent qerre eufrai-</l>
+               <l facs="#l175"> se: &et-tironien; me distrent. Apele eufraise &et-tironien;
+                  lame-</l>
+               <l facs="#l176"> ine deuant deu. &et-tironien; ie lapelai. &et-tironien; alames</l>
+               <l facs="#l177"> ensamble as messages des qua une</l>
+               <l facs="#l178"> porte qui fu ouerte aussitost. Ie ne poi</l>
+               <l facs="#l179"> entrer enz. &et-tironien; li message presenterent</l>
+               <l facs="#l180"> eufraise a nostre signor. &et-tironien; li distrent</l>
+               <l facs="#l181"> uoiz ici ton loier. ici serras tu toz iors</l>
+               <l facs="#l182" part="I"> mes.</l>
+            </lg>
+            <lg>
+               <l facs="#l182" part="F"> Ceste a uision uit labeesse. La</l>
+               <l facs="#l183"> nuit: &et-tironien; lendemein morut eufraise. &et-tironien; no-</l>
+               <l facs="#l184"> stre sires li rendi la corone es cieus que</l>
+               <l facs="#l185"> ele auoit de seruie en terre. Ici con()</l>
+            </lg>
+         </div>
+      </body>
+   </text>
+</TEI>

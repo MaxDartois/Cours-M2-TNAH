@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Le Misanthrope</title>
+            <author>Molière</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Le Misanthrope</head>
+         <castList>
+            <castItem xml:id="Philinte">Philinte</castItem>
+            <castItem xml:id="Alceste">Alceste</castItem>
+         </castList>
+         <div1 type="acte" n="1">
+            <head>Acte I</head>
+            <div2 type="scene" n="1">
+               <head>Scene 1</head>
+               <stage>PHILINTE, ALCESTE</stage>
+               <sp who="#Philinte">
+                  <speaker>PHILINTE.</speaker>
+                  <l>Qu'est-ce donc? qu'avez-vous ?</l>
+               </sp>
+               <sp who="#Alceste">
+                  <speaker>ALCESTE</speaker>
+                  <stage>, assis</stage>
+                  <l n="1" part="I">Laissez-moi, je vous prie.</l>
+               </sp>
+               <sp who="#Philinte">
+                  <speaker>PHILINTE</speaker>
+                  <l n="1" part="F">Mais encor, dites-moi, quelle bizarrerie....</l>
+               </sp>
+               <sp who="#Alceste">
+                  <speaker>ALCESTE.</speaker>
+                  <l n="2">Laissez-moi là, vous dis-je, et courez vous cacher.</l>
+               </sp>
+               <sp who="#Philinte">
+                  <speaker>PHILINTE.</speaker>
+                  <l n="3">Mais on entend les gens au moins sans se fâcher.</l>
+               </sp>
+               <sp who="#Alceste">
+                  <speaker>ALCESTE.</speaker>
+                  <l n="4">Moi, je veux me fâcher, et ne veux point entendre.</l>
+               </sp>
+               <sp who="#Philinte">
+                  <speaker>PHILINTE</speaker>
+                  <l n="5">Dans vos brusques chagrins je ne puis vous comprendre,</l>
+                  <l n="6">Et quoique amis enfin, je suis tout des premiers....</l>
+               </sp>
+               <sp who="#Alceste">
+                  <speaker>ALCESTE</speaker>
+                  <stage>, se levant brusquement</stage>
+                  <l n="7">Moi, votre ami? Rayez cela de vos papiers.</l>
+                  <l n="8">J'ai fait jusques ici profession de l'être,</l>
+                  <l n="9">Mais, après ce qu'en vous je viens de voir paraître,</l>
+               </sp>
+            </div2>
+         </div1>
+      </body>
+   </text>
+</TEI>

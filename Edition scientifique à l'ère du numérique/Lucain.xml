@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="V">V = Vossianus XIX q. 51 suee. x.</witness>
+               <witness xml:id="M1">M = 1\fontcpcssulanus H 113 sace. Ix aut x.</witness>
+               <witness xml:id="M">M = 1\fontcpcssulanus H 113 sace. Ix aut x.</witness>
+               <witness xml:id="Z">Eptcrnaccnsis siuc Parisinus bibl. nat. lat. 10.314
+                  sace.</witness>
+               <witness xml:id="P">P = Colbertinus siue Parisinus' bibl. nat. lat. 7502 saec.
+                  x.</witness>
+               <witness xml:id="P1">P = Colbertinus siue Parisinus' bibl. nat. lat. 7502 saec.
+                  x.</witness>
+               <witness xml:id="U">U = Vossianus alter XIX f. 63 sace. x.</witness>
+               <witness xml:id="G">G = Gemblacensis siue Bruxcllcnsis bibl. Burgundicae 5330 sace. x
+                  aut xr.</witness>
+               <witness xml:id="Ω">Ω consensus codic~m VMZPUG</witness>
+               <witness xml:id="S">S = Sangcrmanensis siue Parisinus bibl. nat. lat. 13045 sace.
+                  x.</witness>
+               <witness xml:id="Q">Q = Puteanus siue Parisinus bibl. nat. lat 13045 saec.
+                  x.</witness>
+               <witness xml:id="C">C = lemmata codicis Bernensis 370 saec x.</witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <lg>
+            <l>annua uenali referens certamina Campo; </l>
+            <l> hinc usura uorax auidumque in <app>
+                  <lem>tempora</lem>
+                  <rdg wit="#M #G #S">tempore</rdg>
+               </app> fenus </l>
+            <l> et <app>
+                  <lem>concussa</lem>
+                  <rdg wit="#P">confusa</rdg>
+               </app>fides et multis utile bellum. </l>
+            <l> iam gelidas Caesar cursu superauerat Alpes</l>
+            <l>ingentisque animo motus bellumque futurum </l>
+            <l><app>
+                  <lem>ceperat</lem>
+                  <rdg wit="#S">coep-</rdg>
+               </app>. ut uentum est parui Rubiconis ad <app>
+                  <lem>undas</lem>
+                  <rdg wit="#Z">endas</rdg>
+                  <rdg wit="#U">undam</rdg>
+               </app>, </l>
+            <l>ingens uisa duci patriae trepidantis imago </l>
+            <l>clara per obscuram uoltu maestissima noctem </l>
+            <l>turrigero canos effundens uertice crines </l>
+            <l>caesarie lacera nudisque adstare lacertis</l>
+         </lg>
+         <lg>
+            <l>et gemitu permixta loqui: 'quo tenditis <app>
+                  <lem>ultra</lem>
+                  <rdg wit="#P1">ultro</rdg>
+                  <rdg wit="#M1">uel inquit</rdg>
+               </app>?</l>
+            <l>quo fertis mea signa, <app>
+                  <lem>uiri</lem>
+                  <rdg wit="#Z">ueri</rdg>
+               </app>? si iure uenitis, </l>
+            <l>si ciues, huc usque licet.' <app>
+                  <lem>tum</lem>
+                  <rdg wit="#Z #U">tunc</rdg>
+               </app> perculit horror </l>
+            <l>membra ducis, riguere comae <app>
+                  <lem>gressumque</lem>
+                  <rdg wit="#S">-susque</rdg>
+               </app> coercens </l>
+            <l>languor in extrema tenuit uestigia ripa. </l>
+            <l>mox <app>
+                  <lem>ait</lem>
+                  <rdg wit="#Z">agit</rdg>
+               </app> 'o magnae qui moenia prospicis urbis </l>
+            <l>Tarpeia de rupe Tonans Phrygiique penates </l>
+            <l>gentis <app>
+                  <lem>Iuleae</lem>
+                  <rdg wit="#M #Q">iuliae</rdg>
+               </app> et rapti secreta Quirini </l>
+            <l>et residens celsa <app>
+                  <lem>Latiaris</lem>
+                  <rdg wit="#Z #P">-nis</rdg>
+               </app> Iuppiter <app>
+                  <lem>Alba</lem>
+                  <rdg wit="#M">alua</rdg>
+               </app>
+            </l>
+            <l>Vestalesque foci summique o numinis instar </l>
+         </lg>
+         <lg>
+            <l>Roma, faue coeptis. non te furialibus armis </l>
+            <l>persequor: en, adsum uictor <app>
+                  <lem>terraque</lem>
+                  <rdg>terraeque</rdg>
+               </app> marique </l>
+            <l>Caesar, ubique tuus (liceat modo, nunc quoque) miles. </l>
+            <l>ille erit ille nocens, qui me tibi fecerit hostem.' </l>
+            <l>inde moras soluit belli tumidumque per amnem </l>
+            <l>signa tulit propere: sicut squalentibus aruis </l>
+            <l><app>
+                  <lem>aestiferae</lem>
+                  <rdg wit="#C">astrif-</rdg>
+               </app>
+               <app>
+                  <lem>Libyes uiso leo comminus hoste</lem>
+                  <rdg wit="#S">libiae uisus leo comminus hostem</rdg>
+               </app>
+            </l>
+            <l><app>
+                  <lem>subsedit</lem>
+                  <rdg wit="#S">consedit</rdg>
+               </app> dubius, totam dum colligit iram; </l>
+            <l>mox, ubi se saeuae stimulauit uerbere caudae </l>
+            <l>erexitque iubam et uasto graue murmur hiatu</l>
+         </lg>
+         <lg>
+            <l>infremuit, tum torta leuis si lancea Mauri </l>
+            <l>haereat aut latum subeant uenabula pectus, </l>
+            <l>per ferrum tanti securus uolneris exit. </l>
+            <l>fonte cadit modico paruisque inpellitur undis </l>
+            <l>puniceus Rubicon, cum feruida canduit aestas, </l>
+            <l>perque imas serpit ualles et Gallica certus </l>
+            <l>limes ab Ausoniis disterminat arua colonis. </l>
+            <l>tum uires praebebat hiemps atque auxerat undas </l>
+            <l>tertia iam grauido pluuialis Cynthia cornu </l>
+            <l>et madidis Euri resolutae flatibus Alpes.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

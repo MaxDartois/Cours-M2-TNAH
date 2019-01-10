@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE texte [
+<!ELEMENT texte (titre, auteur, sonnet) >
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT sonnet (strophe*) >
+<!ELEMENT strophe (vers*) >
+<!ELEMENT vers (#PCDATA) >
+<!ATTLIST strophe attribut CDATA #IMPLIED >
+]>

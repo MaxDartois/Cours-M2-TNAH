@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY pbarre-pre '<choice><abbr>&#58981;</abbr><expan>pre</expan></choice>'>
+<!ENTITY n-non '<choice><abbr>n</abbr><expand>non</expand></choice>'>
+<!ENTITY uv '<choice><abbr>u</abbr><expand>v</expand></choice>'>
