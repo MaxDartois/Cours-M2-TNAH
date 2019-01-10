@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "file:/Users/Max/Desktop/Master%20TNAH/M2/ENC2409/EAD,%20normes/EAD%2012:11/ead.dtd">
+<ead>
+    <eadheader>
+        <eadid/>
+        <filedesc>
+            <titlestmt>
+                <titleproper>ÉTAT SOMMAIRE DES FONDS D’ARCHIVES PRIVÉES<lb/>SÉRIE AP (1 à 680
+                    AP)</titleproper>
+            </titlestmt>
+            <editionstmt>
+                <edition>État revu et mis à jour à la date du 20 juin 2011</edition>
+            </editionstmt>
+            <publicationstmt>
+                <date>20 juin 2011</date>
+                <!-- Ajout Hélène Dartois le...-->
+                <publisher>Archives nationales (site de Paris) Section des Archives
+                    privées</publisher>
+            </publicationstmt>
+        </filedesc>
+    </eadheader>
+    <frontmatter>
+        <div>
+            <head>AVERTISSEMENT TRÈS IMPORTANT</head>
+            <p>Pour approfondir votre recherche, pour remplir une demande de consultation de
+                documents dont l’accès est soumis à une autorisation ou à une dérogation, la
+                consultation de l’État sommaire n’est pas suffisante. Il est indispensable que vous
+                consultiez aussi au préalable les inventaires et répertoires plus détaillés.</p>
+            <p>Ils sont consultables soit en ligne (voir la rubrique « Inventaires et répertoires en
+                ligne »), soit en salle des inventaires des Archives nationales (site de Paris). </p>
+            <p>Les demandes de consultation rédigées uniquement à partir de l’État sommaire risquent
+                de vous être retournées, afin que vous précisiez votre recherche.</p>
+        </div>
+    </frontmatter>
+    <archdesc level="fonds">
+        <did>
+            <unitid>1 à 680 AP</unitid>
+            <unittitle/>
+        </did>
+        <processinfo>
+            <p>Chaque notice de fonds comprend : </p>
+            <p>– la cote du fonds dans la série AP (archives personnelles et familiales), AB XIX
+                (fonds d’érudits et collections d’autographes) ou Mi (microfilm) ; </p>
+            <p>– l’intitulé du fonds ou de la collection : titre que porte le fonds de toute
+                ancienneté (chartrier de Tournon) ou titre forgé sur le nom de son producteur. On a
+                distingué les fonds organiquement constitués, résultant de l’activité d’une personne
+                physique ou morale dans l’exercice de ses activités, des collections de pièces
+                diverses rassemblées par des érudits ou des amateurs d’autographes (collection de
+                Coppet, par exemple). Dans le cas d’un individu isolé, le fonds a reçu pour
+                appellation le prénom et le nom du producteur (fonds Alexandre Millerand) ; dans le
+                cas d’une famille, seul a été retenu le patronyme. </p>
+            <p>– les dates extrêmes des documents, ou à défaut, les siècles couverts par les
+                documents ;</p>
+            <p> – l’importance matérielle du fonds (nombre d’unités de conditionnement, suivi des
+                cotes extrêmes et du métrage linéaire) : cette rubrique correspond à la rubrique «
+                composition » de l’état sommaire de 1973 ;</p>
+            <p> – les modalités d’entrée (rubriques « origine » et « dates d’entrée » dans l’état
+                sommaire de 1973) : statut juridique (don, dépôt, achat, dation, legs ou prêt pour
+                microfilmage) et date(s) d’entrée ; les auteurs des libéralités sont cités ; </p>
+            <p>– les conditions d’accès (rubrique « communication » dans l’état sommaire de 1973) :
+                accès libre ou dispositions restreignant l’accès au fonds ; la communication d’un
+                fonds d’archives privées peut être soumise à des conditions fixées par le
+                propriétaire des archives au moment de leur remise aux Archives nationales, dans ce
+                cas on a porté la mention « sur autorisation » ; les archives publiques contenues
+                dans certains fonds de la série AP (dossiers de travail d’hommes politiques ayant
+                exercé des fonctions publiques), bien qu’entrées par voie extraordinaire, restent
+                des archives publiques imprescriptibles et obéissent aux délais fixés par la loi du
+                3 janvier 1979, on a donc précisé « sur dérogation » lorsque les délais de libre
+                communication prévus par la loi de 1979 n’étaient pas encore atteints et que l’avis
+                des services producteurs était requis ;</p>
+            <p> – le cas échéant, les conditions de reproduction : toute restriction à la
+                reproduction de l’unité de description (ces renseignements n’apparaissaient pas dans
+                l’état sommaire de 1973) ; elles sont systématiquement indiquées lorsqu’un fonds (ou
+                une partie de celui-ci) est en libre communication, mais que sa reproduction est
+                soumise à autorisation ou à dérogation, voire interdite ; en revanche, afin de ne
+                pas alourdir les notices, il a été considéré que toute restriction des conditions
+                d’accès d’un fonds (sur autorisation ou sur dérogation) donnait ipso facto lieu à
+                l’application des conditions de reproduction restrictives correspondantes, sans
+                qu’il soit pour autant nécessaire de l’indiquer ; </p>
+            <p>– la référence de l’instrument de recherche disponible ou, à défaut, la mention «
+                fonds non classé » ; on ne dispose parfois que d’un état sommaire (état sans
+                classement préalable) ; </p>
+            <p>– une notice biographique, familiale ou institutionnelle présentant le producteur du
+                fonds, afin de situer les documents dans leur contexte et de les rendre plus
+                intelligibles : dans le précédent état sommaire, ces éléments n’apparaissaient pas
+                en tant que tels, ils étaient confondus avec la présentation du contenu ; </p>
+            <p>– l’historique de la conservation : renseignements importants sur l’histoire du fonds
+                contribuant à son interprétation et prouvant son authenticité et son intégrité (il
+                n’apparaissait pas dans l’état sommaire de 1973) ; </p>
+            <p> – la présentation du contenu sous la forme du plan de classement du fonds, ou, à
+                défaut, d’un récolement sommaire sans classement préalable ;</p>
+            <p> – les sources complémentaires ayant un lien de provenance avec le fonds ou
+                conservées à la section (non indiquées dans l’état sommaire de 1973) ; certaines
+                notices renvoient à des fonds d’archives privées conservés dans différents services
+                d’archives départementales ou à des versements d’archives publiques conservés aux
+                Archives nationales (site de Fontainebleau) : il s’agit d’archives ayant la même
+                provenance que celles décrites dans la présentation du contenu. Cette rubrique ne
+                prétend aucunement à l’exhaustivité ;</p>
+            <p> – la bibliographie : il s’agit des ouvrages ou articles utilisés pour la rédaction
+                de la notice biographique. Cette bibliographie a donc une portée limitée : les
+                ouvrages cités sont très souvent des usuels que chacun peut aisément consulter.</p>
+        </processinfo>
+        <processinfo>
+            <p>TABLE DES ABBREVIATIONS <list>
+                    <item>arr. arrondissement</item>
+                    <item>cant. canton</item>
+                    <item>circa vers</item>
+                    <item>comm. commune</item>
+                    <item>dact. dactylographié</item>
+                    <item>env. environnement</item>
+                    <item>état somm. état sommaire</item>
+                </list>
+            </p>
+        </processinfo>
+        <acqinfo>
+            <p> Le fonds est constitué de 260 cartons (581 AP 1-261) soit 44,80 mètres linéaires.
+                Entré par dons de 1994 à 2004.</p>
+        </acqinfo>
+        <accessrestrict>
+            <p>L'accès est libre sauf fichiers d’adhérents (sur autorisation jusqu’en 2014).</p>
+        </accessrestrict>
+        <bioghist>
+            <p>Le Parti socialiste unifié (PSU) est né le 3 avril 1960. Issu du regroupement de deux
+                formations, l’Union de la gauche socialiste et le Parti socialiste autonome,
+                composées d’ex- membres de la SFIO refusant le soutien accordé par leur parti au
+                général de Gaulle au lendemain des événements d’Algérie de mai 1958, le PSU est
+                bientôt rejoint par quelques anciens communistes et des personnalités politiques
+                telles Mendès-France. La lutte contre la guerre et pour la paix en Algérie assure la
+                cohésion du nouveau parti, du moins jusqu’en 1963. S’ouvre alors le temps des
+                affrontements et de tendances au sujet de ce que doit être le PSU et sur la façon
+                dont il doit s’inscrire dans la société et le paysage politique français. À partir
+                de 1974, le PSU se rapproche du PS, et il participe au gouvernement de 1981 à 1984.
+                Sous la direction d’Édouard Depreux (1960-1967), Michel Rocard (1967-1973), Robert
+                Chapuis (1973-1974), Michel Mousel (1974-1979), Huguette Bouchardeau (1979-1981),
+                Jacques Salvator (1981-1983), Serge Depaquit (1983-1984) et Jean-Claude Le Scornet
+                (1984- 1989), le débat se poursuit jusqu’au XVIIIe congrès national : le 24 novembre
+                1989, à une majorité de plus de 75 % des mandats, le PSU s’autodissout. </p>
+        </bioghist>
+        <scopecontent>
+            <p>581 AP 1. S.F.I.O., Comité socialiste d’étude et d’action pour la paix en Algérie.
+                1957- 1958.</p>
+        </scopecontent>
+        <dsc>
+            <c id="id-1" level="series">
+                <did>
+                    <unitid>581 AP 1-5</unitid>
+                    <unitdate> 1958-1962.</unitdate>
+                    <unittitle>Parti socialiste autonome.</unittitle>
+                </did>
+            </c>
+            <c level="onds">
+                <did>
+                    <unitid>581 AP 6-147.</unitid>
+                    <unittitle>Partisocialisteunifié.</unittitle>
+                </did>
+            </c>
+            <c level="subfonds">
+                <did>
+                    <unitid>581 AP 6-80.</unitid>
+                    <unitdate>1953-1981.</unitdate>
+                    <unittitle>Direction nationale.</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>581 AP 6-20</unitid>
+                        <unitdate>1962-1976.</unitdate>
+                        <unittitle>Généralités.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>581 AP 20 (suite)-25</unitid>
+                        <unitdate>1958-1974.</unitdate>
+                        <unittitle>Secrétaires nationaux.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>581 AP 26-27.</unitid>
+                        <unitdate> 1953-1976.</unitdate>
+                        <unittitle>Bureau national.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>28.</unitid>
+                        <unittitle>Délégation permanente et crise interne de 1963.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>28 (suite)-32.</unitid>
+                        <unitdate>1960-1969</unitdate>
+                        <unittitle>Comité politique national. </unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>33</unitid>
+                        <unitdate>1969-1975.</unitdate>
+                        <unittitle>Directionpolitiquenationale.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>34.</unitid>
+                        <unitdate>1964-1971.</unitdate>
+                        <unittitle>Textes divers.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>34 (suite)-48.</unitid>
+                        <unitdate>1958- 1977.</unitdate>
+                        <unittitle>Commissions nationales statutaires et
+                            administratives.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>48 (suite)-67.</unitid>
+                        <unitdate>1957-1981.</unitdate>
+                        <unittitle>Commissions nationales d’études et d’action.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>68-75.</unitid>
+                        <unitdate>1961-1974</unitdate>
+                        <unittitle>Congrèsnationaux.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>75 (suite)-80</unitid>
+                        <unitdate>1960-1977</unitdate>
+                        <unittitle>Conseils nationaux.</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c>
+                <did>
+                    <unitid>80-87.</unitid>
+                    <unitdate> 1960-1976.</unitdate>
+                    <unittitle>Logistique.</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>80-83</unitid>
+                        <unitdate>1961-1975</unitdate>
+                        <unittitle>Siège national.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>83</unitid>
+                        <unitdate>1964-1969</unitdate>
+                        <unittitle>Secrétariat administratif, personnel, service
+                            d’ordre.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>83-87</unitid>
+                        <unitdate>1960-1976</unitdate>
+                        <unittitle> Trésorerienationale.</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c>
+                <did>
+                    <unitid>88-98</unitid>
+                    <unitdate>1960-1981</unitdate>
+                    <unittitle>Presse interne et propagande.</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>88</unitid>
+                        <unitdate>1961-1974</unitdate>
+                        <unittitle>Service de presse et des publications.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>89</unitid>
+                        <unitdate>1960-1976</unitdate>
+                        <unittitle>Commissions nationales et Conférences « Presse ».</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>89-98</unitid>
+                        <unitdate>1960-1981</unitdate>
+                        <unittitle>Journaux et revues du P.S.U.</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c>
+                <did>
+                    <unitid>99-115</unitid>
+                    <unitdate>1960-1979</unitdate>
+                    <unittitle>Effectifs</unittitle>
+                </did>
+            </c>
+            <c>
+                <did>
+                    <unitid>116-118</unitid>
+                    <unitdate>1963-1974</unitdate>
+                    <unittitle>Engagements particuliers.</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>116</unitid>
+                        <unitdate>1963-1966</unitdate>
+                        <unittitle>Guerre d’Algérie, Rencontre socialiste de Grenoble.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>116-117</unitid>
+                        <unitdate>1963-1974</unitdate>
+                        <unittitle>MouvementdeMai68.</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>117-118</unitid>
+                        <unitdate>1970-1974</unitdate>
+                        <unittitle>Lutte contre la répression, Lip.</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c>
+                <did>
+                    <unitid>119-140</unitid>
+                    <unitdate>1960-1982</unitdate>
+                    <unittitle>Liaisonsaveclesfédérationsetlessections.</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>119-120</unitid>
+                        <unitdate>1960-1975</unitdate>
+                        <unittitle>Généralités</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>120-125</unitid>
+                        <unitdate>1960-1982</unitdate>
+                        <unittitle>Paris, Seine et Seine-et-Oise</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>125-138</unitid>
+                        <unitdate>Autres fédérations départementales</unitdate>
+                        <unittitle>1960-1978</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>138-140</unitid>
+                        <unitdate>1863-1975</unitdate>
+                        <unittitle>Fédérations régionales</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>140</unitid>
+                        <unitdate>1963-1974</unitdate>
+                        <unittitle>Travail interfédéral région parisienne</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c>
+                <did>
+                    <unitid>140-144</unitid>
+                    <unitdate>1962-1974</unitdate>
+                    <unittitle>Organisationsdejeunesse.</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>140</unitid>
+                        <unitdate>1962-1963</unitdate>
+                        <unittitle>Commission nationale « Jeunesse »</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>141-142</unitid>
+                        <unitdate>1966-1971</unitdate>
+                        <unittitle>Service « Jeunesse », Comité de coordination national « Jeunes » (CCNJ) puis Comité de coordination «Jeunes Travailleurs»
+                            (CCJT).</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>142.</unitid>
+                        <unitdate>1963-1969</unitdate>
+                        <unittitle>Jeunesse socialistes unifiées</unittitle>
+                    </did>
+                </c>
+                <c>
+                    <did>
+                        <unitid>142-144</unitid>
+                        <unitdate>1961-1974</unitdate>
+                        <unittitle>Etudiants socialistes unifiés.</unittitle>
+                    </did>
+                </c>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>

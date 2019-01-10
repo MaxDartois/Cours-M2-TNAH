@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "file:/Users/Max/Desktop/Master%20TNAH/M2/ENC2409/EAD,%20normes/Fichiers_12_novembre/ead.dtd">
+<ead>
+    <eadheader>
+        <eadid/>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Archives du laboratoire de cartographie</titleproper>
+                <subtitle>INVENTAIRE</subtitle>
+                <author>Mathias Gardet et Yamina Irid <lb/>avec la collaboration d’Armelle Olivier
+                    et de Carole Rotta <lb/> Sous la direction de Brigitte Mazon</author>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>Archives nationales. Centre des Archives Contemporaines</publisher>
+            </publicationstmt>
+        </filedesc>
+    </eadheader>
+    <frontmatter>
+        
+    </frontmatter>
+    <archdesc level="">
+        <div>
+            <p>AVANT PROPOS</p>
+            <p>Jacques Bertin</p>
+            <div>
+                <head>INTRODUCTION</head>
+                <p>Françoise Vergneault et Mathias Gardet</p>
+                <div>
+                    <p>NOTE TECHNIQUE</p>
+                    <p>Brigitte Mazon</p>
+                    <bioghist>
+                        <p>Le laboratoire de cartographie a été créé par Jacques Bertin en 1954 à
+                            l’instigation de Lucien Febvre, président de la sixième section de
+                            l’Ecole pratique des hautes études (EPHE-VI). Après le départ en
+                            retraite de son fondateur (1985), les activités des cartographes,
+                            membres du laboratoire, ont été progressivement intégrées dans le
+                            service des publications de l’Ecole des hautes études en sciences
+                            sociales (EHESS).</p>
+                    </bioghist>
+                    <p>Ce versement des archives du laboratoire de cartographie a été opéré à
+                        l’initiative de Françoise Vergneault, directrice d’étude à l’EHESS.
+                        Soucieuse de voir préservé le patrimoine scientifique du laboratoire où elle
+                        a exercé elle-même les fonctions de cartographe et d’enseignant-chercheur de
+                        1961 à 1999, Françoise Vergneault a fait établir par Mathias Gardet,
+                        historien, un état des lieux des différentes collections documentaires du
+                        laboratoire (bibliothèque et cartothèque) ainsi qu’un état sommaire des
+                        archives. L’inventaire ci-dessous reprend en grande partie ce travail
+                        initial, à l’exclusion des collections documentaires.</p>
+                    <p>Le fonds d’archives des travaux du laboratoire était conservé dans les bacs à
+                        cartes et les armoires des locaux anciennement occupés par le laboratoire de
+                        cartographie, 131 bd Saint-Michel à Paris. Françoise Vergneault et Mathias
+                        Gardet ont préconisé la conservation de l’ensemble de ces dossiers de
+                        travaux et de toutes les étapes intermédiaires de la réalisation des cartes
+                        et graphiques qui reflètent l’évolution des méthodes et des techniques.</p>
+                    <p>Les conditions matérielles de transfert au Centre des archives contemporaines
+                        des Archives nationales et les modalités de conservation des différents
+                        supports d’archives ont nécessité un fractionnement du fonds en plusieurs
+                        versements. Le versement n° 20010292 contient les documents administratifs
+                        du laboratoire, les dossiers pédagogiques de Jacques Bertin ainsi que les
+                        dossiers de travaux classés par auteur et contenus dans des enveloppes de
+                        dimensions inférieures à 50x36. Le même type de dossiers de travaux (cartes,
+                        dessins, graphiques) au format supérieur, conservés à l’origine dans les
+                        bacs à cartes du laboratoire, ont été regroupés dans le versement n°
+                        20010291. En raison des conditions de conservation définitive des cartes de
+                        grand format, nous avons extrait de ces dossiers les correspondances et les
+                        imprimés (signalés par un renvoi) que nous avons regroupés dans l’article 20
+                        du versement 20010292.</p>
+                    <p>Les différentes étapes de réalisation de ces travaux ont été, en général,
+                        consignées dans un cahier de commandes pour la période 1954–1960, puis, pour
+                        la période 1960-1983 dans deux fichiers tenus respectivement par Jacques
+                        Bertin et Serge Bonin d’une part et par Françoise Vergneault d’autre part
+                        (voir les références au « fichier des travaux » dans l’inventaire). Ce
+                        cahier et ces fichiers constituent le versement n° 20010297. Les versements
+                        n° 20010293 et n° 20010294 contiennent des films et des photographies ayant
+                        pour objet les activités du laboratoire de cartographie. Le versement n°
+                        20010295 contient les calques des cartes originales produites par le
+                        laboratoire. Le versement n° 20010296 contient un échantillonage du matériel
+                        utilisé pour la fabrication des matrices ordonnables (dominos, tringles,
+                        échantillon de petites matrices) ainsi que des planches des « points Bertin
+                        ».</p>
+                </div>
+                <div>
+                    <p>Conventions typographiques :</p>
+                    <p>Les analyses descriptives des documents sont données en caractère normal.
+                        Elles sont suivies le plus souvent, pour les dossiers de travaux,
+                        d’informations complémentaires transcrites en plus petits caractères :
+                        renvois aux fiches des fichiers de travaux (qui nous renseignent en
+                        particulier sur les dates de début et de fin de chaque dossier de travaux) ;
+                        références bibliographiques des ouvrages recensés par Mathias Gardet dans la
+                        bibliothèque du laboratoire. L’usage de ces caractères typographiques
+                        différents nous a servi aussi pour quelques remarques ou pour les
+                        commentaires introductifs à une série de documents.</p>
+                </div>
+                <div>
+                    <p>Remerciements</p>
+                    <p>L’achèvement de cet inventaire doit beaucoup à Claudie Le Cossec, chargée de
+                        liaison avec les établissements d’enseignement supérieur aux Archives
+                        nationales. Nous la remercions pour toute son aide.</p>
+                </div>
+            </div>
+        </div>
+        <arrangement>
+            <p/>
+        </arrangement>
+        <dsc>
+            <c level="recordgrp">
+                <did>
+                    <unitid>VERSEMENT N° 20010292</unitid>
+                </did>
+            </c>
+            <c level="series">
+                <did>
+                    <unitid/>
+                    <unittitle>Documents administratifs (art. 1 – 5)</unittitle>
+                </did>
+                <c level="file">
+                    <did>
+                        <unitid>Art. 1</unitid>
+                        <unittitle>Rapports d’activité et programmes du Laboratoire de
+                            graphique</unittitle>
+                        <unitdate>1957-1960 à 1984-1985</unitdate>
+                    </did>
+                    <scopecontent>
+                        <p>Les dossiers, classés par année universitaire, comportent la collection
+                            complète des rapports d’activité du laboratoire ainsi que certains
+                            documents préparatoires à leur rédaction. Ces dossiers contiennent aussi
+                            des demandes de création d’emplois, des demandes de crédits ainsi que
+                            des rapports individuels d’activité des personnels du laboratoire, des
+                            lettres de candidature, c.v., arrêtés de nomination des personnels.</p>
+                        <p>Correspondance du directeur du laboratoire: Serge Bonin, correspondance
+                            (1984-1992). Jacques Bertin correspondance (1967-1981)</p>
+                        <p>Note: ce dossier est de faible volume car la correspondance de Jacques
+                            Bertin est dispersée dans l’ensemble des dossiers de travaux du
+                            laboratoire.</p>
+                    </scopecontent>
+                </c>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>

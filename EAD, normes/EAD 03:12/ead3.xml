@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "file:/Users/Max/Desktop/Master%20TNAH/M2/ENC2409/EAD,%20normes/EAD%2003:12/Cours%20EAD/ead.dtd">
+<ead>
+    <eadheader>
+        <eadid></eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper></titleproper>
+            </titlestmt>
+        </filedesc>
+    </eadheader>
+    <archdesc level="">
+        <did></did>
+    </archdesc>
+</ead>

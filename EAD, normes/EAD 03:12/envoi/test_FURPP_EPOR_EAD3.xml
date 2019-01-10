@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns="http://ead3.archivists.org/schema/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ead3.archivists.org/schema/ ead3.xsd">
+    <control>
+        <recordid>FR-MRN-0001</recordid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Fonds du Front uni des résistants de la Préfecture de Police - Émile
+                    Portzer</titleproper>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>CCC MRN</publisher>
+                <date>mars 2012</date>
+            </publicationstmt>
+        </filedesc>
+
+        <maintenancestatus value="new"/>
+        <!-- Valeurs possibles : new, derived, revised. Ici on fait plutôt référence à l'instance EAD dans un SI et non plus à la version "papier".-->
+        <maintenanceagency>
+            <agencyname>CCC MRN</agencyname>
+        </maintenanceagency>
+
+        <maintenancehistory>
+            <maintenanceevent>
+                <eventtype value="created"/>
+                <!-- Valeurs possibles : cancelled, created, deleted, derived, revised, unknown, updated.-->
+                <eventdatetime standarddatetime="2018-12-16">16 décembre 2018</eventdatetime>
+                <!-- Contrôle des attributs beaucoup plus fin. -->
+                <agenttype value="human">Vincent Verdese</agenttype>
+                <agent/>
+            </maintenanceevent>
+        </maintenancehistory>
+    </control>
+
+
+    <archdesc level="fonds">
+        <did>
+            <unitid>85AJ/1/14/FURPP-EPOR</unitid>
+            <unittitle>Fonds du Front uni des résistants de la Préfecture de Police - Émile Portzer
+                85AJ/1/14/FURPP-EPOR</unittitle>
+            <unitdatestructured>
+                <daterange>
+                    <fromdate standarddate="1907">1907</fromdate>
+                    <todate standarddate="1922">1922</todate>
+                </daterange>
+                <!--       Gestion plus précise des intervalles de dates, par exemple :
+                    <dateset>
+                    <datesingle standarddate="1963-01-22">22 janvier 1963</datesingle>
+                    <daterange>
+                        <fromdate standarddate="1971-06-01">1 juin 1971</fromdate>
+                        <todate standarddate="1974-04-30">30 avril 1974</todate>
+                    </daterange>
+                </dateset>-->
+            </unitdatestructured>
+            <physdescset>
+                <physdescstructured physdescstructuredtype="spaceoccupied" coverage="whole">
+                    <!-- Valeurs possibles pour physdescstructuredtype : carrier, materialtype, otherphysdescstructuredtype, spaceoccupied. 
+                         Valeurs possibles pour coverage : part, whole. -->
+                    <quantity>11,2</quantity>
+                    <unittype>mètres linéaires</unittype>
+                </physdescstructured>
+                <physdescstructured physdescstructuredtype="carrier" coverage="whole">
+                    <quantity>70</quantity>
+                    <unittype>cartons</unittype>
+                </physdescstructured>
+            </physdescset>
+            <origination>
+                <persname>
+                    <part localtype="last-name">Portzer</part>
+                    <part localtype="first-name">Émile</part>
+                </persname>
+                <corpname>
+                    <part>Front uni des résistants de la Préfecture de Police</part>
+                </corpname>
+                <persname>
+                    <part localtype="last-name">Portzer</part>
+                    <part localtype="first-name">France</part>
+                </persname>
+            </origination>
+        </did>
+        
+        
+        <acqinfo>
+            <p>dons d’Émile et France Portzer du 15 février 2002 (NE 2409bis) et du 18 février 2003 (NE 2524)</p>
+        </acqinfo>
+        <accessrestrict>
+            <p>- Carton 47 : Commémorations et manifestations : 1949-1971 et s.d. Un document non
+                communicable (10 novembre 1970)</p>
+            <p>- Carton 50 : Défense des policiers membres du Parti communiste révoqués. Un dossier non
+                communicable (1961-1963 et s.d.)</p>
+        </accessrestrict>
+        <userestrict>
+            <p>reproduction libre sous réserve des restrictions imposées par les
+                délais légaux ou l'état matériel des documents.</p>
+        </userestrict>
+        <bioghist>
+            <p>Le Front uni des résistants de la Préfecture de police (déportés, internés, FFI, FFC, FFL, réfractaires
+                et patriotes), abrégé en FURPP, créé le 16 mai 1945, fusionne les groupements de résistance de la
+                Préfecture de Police (Front national, Honneur de la Police, Police et Patrie), et plus généralement
+                tous les résistants et leur famille qui ont participé à la résistance à Paris au sein de la Préfecture de
+                Police.
+                Comme beaucoup d'associations d'anciens résistants, le FURPP œuvre pour la mémoire de la
+                résistance des fonctionnaires de police et pour la défense des droits des adhérents et de leur famille.
+                Le 27 mars 1969, Le FURPP et le FACRDIPVGPP forment la Fédération des anciens combattants
+                et résistants de la Préfecture de Police (FURPP - FACRDIPVGPP).</p>
+            <!-- Noter que l'indexation dans le texte n'est plus possible. Choix précis dans l'optique de SI. -->
+        </bioghist>
+        <scopecontent>
+            <p>Ce fonds rassemble à la fois les archives de l'association FURPP (qui forment la plus grande partie)
+                et les archives d'Emile Portzer, qui fut l'un de ses dirigeants.
+                Les archives de l'association comprennent des documents relatifs à son fonctionnement, et surtout à
+                ses activités. Soulignons notamment l'importance à la fois matérielle et historique des dossiers
+                concernant la reconnaissance des droits de résistance des fonctionnaires de la Préfecture de Police,
+                en particulier la présence de rapports rédigés lors de l'insurrection parisienne d'août 1944, ou
+                immédiatement après (cartons 14 à 44).</p>
+        </scopecontent>
+        
+        <!-- Le <dsc> n'a pas été modifié pour montrer la compatibilité de EAD3 et EAD 2002. -->
+        <dsc>
+            <c id="u1" level="series">
+                <did>
+                    <unitid>I</unitid>
+                    <unittitle>Archives de l'association FURPP</unittitle>
+                </did>
+                
+                
+                <c id="ud1" level="subseries">
+                    <did>
+                        <unittitle>Fonctionnement</unittitle>
+                    </did>
+                    
+                    
+                    <c id="ud1_1" level="file">
+                        <did>
+                            <unitid>1</unitid>
+                            <unittitle>Fondation (statuts, déclarations), composition (adhésions</unittitle>
+                            <unitdate normal="1945/1969">1945-1969</unitdate>
+                        </did>
+                    </c>
+                    <c id="ud1_2">
+                        <did>
+                            <unitid>2-5</unitid>
+                            <unittitle>Composition (suite) : adhésions.</unittitle>
+                            <unitdate normal="1945/1976">1945-1976</unitdate>
+                            <unitdate normal="1980/2002"> et post 1980</unitdate>
+                        </did>
+                    </c>
+                </c>
+                <c id="u1_2">
+                    <did>
+                        <unittitle>Activités</unittitle>
+                    </did>
+                    
+                    <c>
+                        <did>
+                            <unitid>9-12</unitid>
+                            <unittitle>Correspondance.</unittitle>
+<!--                        Ancienne structure : 
+                            <unitdate normal="1944/1957">1944-1957</unitdate>
+                            <unitdate normal="1960/1961">1960-1961</unitdate>
+                            <unitdate normal="1907/2002">et s.d.</unitdate>-->
+                            <unitdatestructured>
+                                <dateset>
+                                    <daterange>
+                                        <fromdate standarddate="1944">1944</fromdate>
+                                        <todate standarddate="1957">1957</todate>
+                                    </daterange>
+                                    <daterange>
+                                        <fromdate standarddate="1960">1960</fromdate>
+                                        <todate standarddate="1961">1961</todate>
+                                    </daterange>
+                                    <daterange>
+                                        <fromdate notbefore="1907" notafter="2002">et s. d.</fromdate>
+                                    </daterange>
+                                </dateset>
+                            </unitdatestructured>
+                        </did>
+                    </c>
+                    <c>
+                        <did>
+                            <unitid>14-44</unitid>
+                            <unittitle>Reconnaissance des droits de résistance des fonctionnaires de la Préfecture de Police.</unittitle>
+                            <unitdate>1920-1926</unitdate>
+                            <unitdate>1936-1961</unitdate>
+                            <unitdate>et s.d.</unitdate>
+                        </did>
+                    </c>
+                    
+                    
+                </c>
+                <c>
+                    <did>
+                        <unittitle>Documentation</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c id="u2" level="series">
+                <did>
+                    <unitid>II</unitid>
+                    <unittitle>Émile Portzer</unittitle>
+                </did>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>

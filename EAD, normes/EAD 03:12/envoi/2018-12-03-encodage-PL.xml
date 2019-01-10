@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "ead.dtd">
+<!-- VV ceci est juste un exemple d'encodage, le fichier n'a pas vocation à décrire toutes les différentes options, valables elle aussi. -->
+<ead>
+    <eadheader>
+        <eadid/>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Inventaire des papiers de Pierre Lefranc</titleproper>
+                <subtitle>569 AP 1 -305</subtitle>
+                <!-- VV aussi valable : <titleproper>569 AP 1 -305<lb/>Inventaire des papiers de Pierre Lefranc</titleproper> -->
+                <author>par Agnes Callu et Patricia Gillet, conservateurs du patrimoine aux Archives
+                    nationales</author>
+                <!-- VV tous les auteurs vont dans le même élément. -->
+            </titlestmt>
+            <publicationstmt>
+                <address>
+                    <addressline>Paris</addressline>
+                </address>
+                <publisher>Archives nationales</publisher>
+                <date>1999</date>
+            </publicationstmt>
+            <notestmt>
+                <note>
+                    <p>Un premier recensement des papiers...</p>
+                </note>
+            </notestmt>
+            <!-- VV autres choix possibles : <processinfo>, <otherfindaid>, <arrangement>. -->
+        </filedesc>
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unittitle>Papiers de Pierre Lefranc</unittitle>
+            <unitid>569 AP</unitid>
+        </did>
+        <acqinfo>
+            <p>En 1995, M. Pierre Lefranc a souhaité déposer...</p>
+        </acqinfo>
+        <arrangement>
+            <p>Cette structure à trois têtes...</p>
+        </arrangement>
+        <!-- VV aussi valable
+            <physdesc>
+                <genreform>Cette structure à trois tetes...</genreform>
+            </physdesc> -->
+        <scopecontent>
+            <p>Les archives écrites (569 AP 1 à 264)...</p>
+            <p>Engagé très tot dans les rangs de la Résistance...</p>
+            <p>Après le retrait du général de Gaulle...<ref target="k123">1</ref></p>
+            <p>Qualifier les archives de Pierre Lefranc...</p>
+            <note id="k123">
+                <p>Sur cette école...</p>
+            </note>
+        </scopecontent>
+        <bioghist>
+            <p>Notice biographique de Pierre Lefranc</p>
+            <p>(in Who's who in France...</p>
+        </bioghist>
+        <bibliography>
+            <p>Sur les ouvrages de Pierre Lefranc...</p>
+            <p>Sur le général de Gaulle...</p>
+            <p><bibref>Jacques Foccart...</bibref></p>
+            <!-- VV aussi valable
+                <list>
+                <item><bibref></bibref></item>
+            </list>-->
+        </bibliography>
+        <relatedmaterial>
+            <note>
+                <p>Le chercheur doit contacter...</p>
+            </note>
+            <p>Archives nationales</p>
+            <!-- VV une liste est aussi valable ici. -->
+        </relatedmaterial>
+        <processinfo>
+            <list>
+                <defitem>
+                    <label>AEF</label>
+                    <item>Afrique équatoriale frnçaise</item>
+                </defitem>
+            </list>
+        </processinfo>
+        <accessrestrict>
+            <p>La consultation des archives de M. Pierre Lefranc est soumise...</p>
+        </accessrestrict>
+        <arrangement>
+            <list>
+                <head>Archives écrites (569 AP 1- 264)</head>
+                <item>Seconde guerre mondiale</item>
+                <item>Mission en Afrique</item>
+            </list>
+            <!-- VV à la place des listes, des paragraphes sont aussi valables. -->
+            <list>
+                <head>Archives iconographiques (569 AP 265- 271)</head>
+                <item>
+                    <list>
+                        <head>Collections de photographies (569 AP 265-266)</head>
+                        <item>Collections de photographies remises par Pierre Lefranc(569 AP
+                            265)</item>
+                        <item>Collection documentaire (569 AP 266)</item>
+                    </list>
+                </item>
+                <item>
+                    <list>
+                        <head>Collection d'affiches, cartes et desseins (569 AP 267-271)</head>
+                        <item>Affiches pôlitiques...</item>
+                        <item>Fonds divers...</item>
+                    </list>
+                </item>
+            </list>
+        </arrangement>
+        <dsc>
+            <c level="series">
+                <did>
+                    <unitid>569 AP 1-2</unitid>
+                    <unittitle>Seconde Guerre mondiale</unittitle>
+                </did>
+                <c>
+                    <did>
+                        <unitid>569 AP 1.</unitid>
+                    </did>
+                    <scopecontent>
+                        <p>Correspondance reçue par Pierre Lefranc avant et pendant la Seconde Guerre mondiale, <unitdate normal="1937/1939">1937-1939</unitdate>, <unitdate normal="1944/1945">1944-1945</unitdate> ; "cahier de combat", <unitdate normal="1922/1995">s.d.</unitdate> ; dessins de Pierre Lefranc, s.d. 1937-1945 et sans date.</p>
+                        <!-- VV cas avec des dates de production de l'unité documentaire dans la description du contenu. Quand un sans date est renseigné, j'ai utilisé - mais que pour la normalisation - les êxtremes présumé du fonds (date de naissance et date de versement). Dans une rétrocnversion sans reprise, je ne corrige donc pas la valeur textuelle des dates.-->
+                    </scopecontent>
+                </c>
+                <c level="series">
+                    <did>
+                        <unitid>569 AP 2.</unitid>
+                    </did>
+                    <scopecontent>
+                        <p>Propagande et technique militaire...</p>
+                    </scopecontent>
+                    <!-- VV j'aurais pu aussi créer un niveau inférieur avec un <c> supplémentaire, mais pas dans le cas de 569 AP 1. -->
+                </c>
+            </c>
+        </dsc>
+
+    </archdesc>
+</ead>

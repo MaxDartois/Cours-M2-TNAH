@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "ead.dtd">
+<ead>
+    <eadheader>
+        <eadid>FR-MRN-0001</eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Fonds du Front uni des résistants de la Préfecture de Police - Émile Portzer</titleproper>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>CCC MRN</publisher>
+                <date>mars 2012</date>
+            </publicationstmt>
+        </filedesc>
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unitid>85AJ/1/14/FURPP-EPOR</unitid>
+            <unittitle>Fonds du Front uni des résistants de la Préfecture de Police - Émile Portzer
+                85AJ/1/14/FURPP-EPOR</unittitle>
+            <unitdate normal="1907/2002">1907 - 2002</unitdate>
+            <physdesc>
+                <extent>11,2 ml</extent>
+                <extent>(70 cartons)</extent>
+            </physdesc>
+            <origination>
+                <persname normal="Portzer, Émile (-)">Émile Portzer</persname>
+                <corpname>Front uni des résistants de la Préfecture de Police</corpname>
+                <persname normal="Portzer, France (-)">France Portzer</persname>
+                <!-- Je considère que France Portzer est aussi producteur parce que... -->
+            </origination>
+        </did>
+        <acqinfo>
+            <p>dons d’Émile et France Portzer du 15 février 2002 (NE 2409bis) et du 18 février 2003 (NE 2524)</p>
+        </acqinfo>
+        <accessrestrict>
+            <p>- Carton 47 : Commémorations et manifestations : 1949-1971 et s.d. Un document non
+                communicable (10 novembre 1970)</p>
+            <p>- Carton 50 : Défense des policiers membres du Parti communiste révoqués. Un dossier non
+                communicable (1961-1963 et s.d.)</p>
+        </accessrestrict>
+        <userestrict>
+            <p>reproduction libre sous réserve des restrictions imposées par les
+                délais légaux ou l'état matériel des documents.</p>
+        </userestrict>
+        <bioghist>
+            <p>Le <persname normal="">Front uni des résistants de la Préfecture de police</persname> (déportés, internés, FFI, FFC, FFL, réfractaires
+                et patriotes), abrégé en FURPP, créé le 16 mai 1945, fusionne les groupements de résistance de la
+                Préfecture de Police (Front national, Honneur de la Police, Police et Patrie), et plus généralement
+                tous les résistants et leur famille qui ont participé à la résistance à Paris au sein de la Préfecture de
+                Police.
+                Comme beaucoup d'associations d'anciens résistants, le FURPP œuvre pour la mémoire de la
+                résistance des fonctionnaires de police et pour la défense des droits des adhérents et de leur famille.
+                Le 27 mars 1969, Le FURPP et le FACRDIPVGPP forment la Fédération des anciens combattants
+                et résistants de la Préfecture de Police (FURPP - FACRDIPVGPP).</p>
+        </bioghist>
+        <scopecontent>
+            <p>Ce fonds rassemble à la fois les archives de l'association FURPP (qui forment la plus grande partie)
+                et les archives d'Emile Portzer, qui fut l'un de ses dirigeants.
+                Les archives de l'association comprennent des documents relatifs à son fonctionnement, et surtout à
+                ses activités. Soulignons notamment l'importance à la fois matérielle et historique des dossiers
+                concernant la reconnaissance des droits de résistance des fonctionnaires de la Préfecture de Police,
+                en particulier la présence de rapports rédigés lors de l'insurrection parisienne d'août 1944, ou
+                immédiatement après (cartons 14 à 44).</p>
+        </scopecontent>
+        <dsc>
+            <c id="u1" level="series">
+                <did>
+                    <unitid>I</unitid>
+                    <unittitle>Archives de l'association FURPP</unittitle>
+                </did>
+                
+                
+                <c id="ud1" level="subseries">
+                    <did>
+                        <unittitle>Fonctionnement</unittitle>
+                    </did>
+                    
+                    
+                    <c id="ud1_1" level="file">
+                        <did>
+                            <unitid>1</unitid>
+                            <unittitle>Fondation (statuts, déclarations), composition (adhésions</unittitle>
+                            <unitdate normal="1945/1969">1945-1969</unitdate>
+                        </did>
+                    </c>
+                    <c id="ud1_2">
+                        <did>
+                            <unitid>2-5</unitid>
+                            <unittitle>Composition (suite) : adhésions.</unittitle>
+                            <unitdate normal="1945/1976">1945-1976</unitdate>
+                            <unitdate normal="1980/2002"> et post 1980</unitdate>
+                        </did>
+                    </c>
+                </c>
+                <c id="u1_2">
+                    <did>
+                        <unittitle>Activités</unittitle>
+                    </did>
+                    
+                    <c>
+                        <did>
+                            <unitid>9-12</unitid>
+                            <unittitle>Correspondance.</unittitle>
+                            <unitdate normal="1944/1957">1944-1957</unitdate>
+                            <unitdate normal="1960/1961">1960-1961</unitdate>
+                            <unitdate normal="1907/2002">et s.d.</unitdate>
+                            <unitdate normal="1941">1941</unitdate>
+                            <unitdate normal="1945">, 1945</unitdate>
+                        </did>
+                    </c>
+                    <c>
+                        <did>
+                            <unitid>14-44</unitid>
+                            <unittitle>Reconnaissance des droits de résistance des fonctionnaires de la Préfecture de Police.</unittitle>
+                            <unitdate>1920-1926</unitdate>
+                            <unitdate>1936-1961</unitdate>
+                            <unitdate>et s.d. <ref target="note1">1</ref></unitdate>
+                        </did>
+                        <note id="note1">
+                            <p>Les documents datés de 1920 à 1926 et de 1936 à 1942 sont des copies pour la plupart.</p>
+                        </note>
+                    </c>
+                    
+                    
+                </c>
+                <c>
+                    <did>
+                        <unittitle>Documentation</unittitle>
+                    </did>
+                </c>
+            </c>
+            <c id="u2" level="series">
+                <did>
+                    <unitid>II</unitid>
+                    <unittitle>Émile Portzer</unittitle>
+                </did>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>
