@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="out/ODD-devoir.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<!DOCTYPE TEI[
+<!DOCTYPE texte [
 <!ENTITY et-tironien '<choice><abbr>&#8266;</abbr><expan>et</expan></choice>'>
 <!ENTITY neuf-tironien '<choice><abbr>&#42863;</abbr><expan>com</expan></choice>'>
 <!ENTITY y-pointe '<choice><abbr>&#7823;</abbr><expan>y</expan></choice>'>
@@ -310,13 +308,15 @@
    </teiHeader>
 
    <facsimile>
+      <!-- Pour créer les zones de textes, et obtenir l'encodage Tei correspondant, j'ai utilisé l'outils TeiZoner mis à disposition par Humanum: http://teicat.huma-num.fr/zoner.php  -->
       <surface>
-         <graphic url="Euphrasie1.jpeg" width="1024px" height="1527px"/>
+         <graphic xml:id="folio-224v" url="Euphrasie1.jpeg" width="1024px" height="1527px"/>
          <zone xml:id="l1" ulx="651" uly="1130" lrx="963" lry="1147"/>
          <zone xml:id="l2" ulx="653" uly="1151" lrx="965" lry="1175"/>
       </surface>
       <surface>
-         <graphic url="Euphrasie2.jpeg" width="1024px" height="1525px"/>
+         <graphic xml:id="folio-225r" url="Euphrasie2.jpeg" width="1024px" height="1525px"/>
+         <zone xml:id="enluminure" ulx="14" uly="30" lrx="331" lry="395"/>
          <zone xml:id="entete1" ulx="263" uly="69" lrx="581" lry="108"/>
          <zone xml:id="l3" ulx="324" uly="170" lrx="419" lry="195"/>
          <zone xml:id="l4" ulx="323" uly="196" lrx="412" lry="217"/>
@@ -364,9 +364,6 @@
          <zone xml:id="l46" ulx="98" uly="1109" lrx="393" lry="1131"/>
          <zone xml:id="l47" ulx="97" uly="1132" lrx="393" lry="1153"/>
          <zone xml:id="l48" ulx="98" uly="1150" lrx="403" lry="1174"/>
-      </surface>
-      <surface>
-         <graphic url="Euphrasie2.jpeg" width="1024px" height="1525px"/>
          <zone xml:id="l49" ulx="492" uly="125" lrx="770" lry="202"/>
          <zone xml:id="l50" ulx="491" uly="200" lrx="764" lry="224"/>
          <zone xml:id="l51" ulx="490" uly="219" lrx="763" lry="243"/>
@@ -415,7 +412,7 @@
          <zone xml:id="l94" ulx="464" uly="1152" lrx="745" lry="1171"/>
       </surface>
       <surface>
-         <graphic url="Euphrasie3.jpeg" width="1024px" height="1527px"/>
+         <graphic xml:id="folio-225v" url="Euphrasie3.jpeg" width="1024px" height="1527px"/>
          <zone xml:id="entete2" ulx="311" uly="59" lrx="958" lry="136"/>
          <zone xml:id="l95" ulx="251" uly="141" lrx="557" lry="195"/>
          <zone xml:id="l96" ulx="256" uly="202" lrx="553" lry="213"/>
@@ -463,9 +460,6 @@
          <zone xml:id="l138" ulx="280" uly="1111" lrx="574" lry="1128"/>
          <zone xml:id="l139" ulx="282" uly="1131" lrx="585" lry="1149"/>
          <zone xml:id="l140" ulx="283" uly="1154" lrx="574" lry="1170"/>
-      </surface>
-      <surface>
-         <graphic url="Euphrasie3.jpeg" width="1024px" height="1527px"/>
          <zone xml:id="l141" ulx="631" uly="129" lrx="936" lry="201"/>
          <zone xml:id="l142" ulx="631" uly="196" lrx="941" lry="223"/>
          <zone xml:id="l143" ulx="633" uly="215" lrx="931" lry="237"/>
@@ -516,10 +510,10 @@
 
    <text>
       <body>
-         <pb xml:id="folio-224vb"/>
+         <pb facs="#folio-224v"/>
          <cb type="right"/>
          <div type="section">
-            <lg>
+            <p>
                <l facs="#l1">&s-long;einte gloire de&s-long; cieus amen. <hi rend="rubrique">Ici co<choice>
                         <abbr>'</abbr>
                         <expan>m</expan>
@@ -527,20 +521,32 @@
                <l facs="#l2"><hi rend="rubrique">mence la &v;ie de madame &s-long;e<choice>
                         <abbr>i</abbr>
                         <expan>in</expan>
-                     </choice>te <persName ref="#eufrase-fille"
-                     ><hi rend="minuscule">E</hi>ufra&s-long;e</persName></hi></l>
-            </lg>
+                     </choice>te <persName ref="#eufrase-fille"><hi rend="minuscule"
+                        >E</hi>ufra&s-long;e</persName></hi></l>
+            </p>
          </div>
-         <pb xml:id="folio-225r"/>
+         <pb facs="#folio-225r"/>
          <div type="entete">
-            <lg>
+            <p>
                <l facs="#entete1"><persName ref="#eufrase-fille"><hi rend="majuscule"
                      >EUFRASE</hi></persName></l>
-            </lg>
+            </p>
+         </div>
+         <div>
+            <p>
+               <seg>
+                  <note>
+                     <p>
+                        <l facs="#enluminure">Enluminure représentant le moment où Euphraise pris
+                           l'habit de religieuse en présence de sa mère et de l'abesse.</l>
+                     </p>
+                  </note>
+               </seg>
+            </p>
          </div>
          <div type="section">
             <cb type="left"/>
-            <lg>
+            <p>
                <l facs="#l3">
                   <placeName ref="#rome"><hi rend="majuscule initiale_filigranée"
                      >R</hi>ome</placeName> ot un</l>
@@ -560,80 +566,84 @@
                <l facs="#l12"> &v;oit une</l>
                <l facs="#l13"> feme.haute dame qi a&v;oit non <persName ref="#eufrase-mere"><hi
                         rend="minuscule">E</hi>ufra&s-long;e</persName>.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l14">
                   <hi rend="majuscule initiale_filigranee">C</hi>ele e&s-long;toit molt bone feme.
                   &et-tironien; fe&s-long;oit molt</l>
-               <l facs="l15"> de bien po&r-rond; no&s-long;tre &s-long;igno&r-rond;.&et-tironien; aloit &v;olen<choice>
+               <l facs="l15"> de bien po&r-rond; no&s-long;tre &s-long;igno&r-rond;.&et-tironien;
+                  aloit &v;olen<choice>
                      <abbr>t</abbr>
                      <expan>te</expan>
                   </choice>s</l>
                <l facs="#l16" part="I"> a &s-long;einte egl&y-pointe;&s-long;e.</l>
-            </lg>
-            <lg>
-               <l facs="#l16" part="F"><hi rend="majuscule initiale_filigranee">I</hi>l o&r-rond;ent une
-                  fille. &et-tironien; li mi&s-long;-</l>
+            </p>
+            <p>
+               <l facs="#l16" part="F"><hi rend="majuscule initiale_filigranee">I</hi>l o&r-rond;ent
+                  une fille. &et-tironien; li mi&s-long;-</l>
                <l facs="#l17"> trent non <persName ref="#eufrase-fille"><hi rend="minuscule"
                      >E</hi>ufrai&s-long;e</persName> au&s-long;&s-long;int &neuf-tironien;me
-                  &s-long;a mere:</l>
-            </lg>
-            <lg>
-               <l facs="#l18" part="I"><persName ref="#antigonus"><hi rend="majuscule initiale_filigranee">A</hi>ntigonus</persName> di&s-long;t
+                  &s-long;a mere.</l>
+            </p>
+            <p>
+               <l facs="#l18" part="I"><persName ref="#antigonus"><hi
+                        rend="majuscule initiale_filigranee">A</hi>ntigonus</persName> di&s-long;t
                   un &j;o&r-rond; a sa feme.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l18" part="F"><hi rend="majuscule initiale_filigranee">D</hi>ame</l>
                <l facs="#l19"> ne &s-long;es tu qe ce&s-long;te &v;ie e&s-long;t b&r-rond;ies.
                   &et-tironien; no&s-long; a&v;<choice>
                      <abbr>o</abbr>
                      <expan>on</expan>
                   </choice>s</l>
-               <l facs="#l20"> ga&s-long;tez no&s-long; &j;o&r-rond;z en &v;ein.gietons nos de&s-long;</l>
+               <l facs="#l20"> ga&s-long;tez no&s-long; &j;o&r-rond;z en &v;ein.gietons nos
+                  de&s-long;</l>
                <l facs="#l21"> terriens &v;ices qe nos ne perdons le ce</l>
-               <l facs="#l22" part="I"> le&s-long;tiel regne.</l>
-            </lg>
-            <lg>
+                  <l facs="#l22" part="I"> le&s-long;tiel regne.</l>
+            </p>
+            <p>
                <l facs="#l22" part="F"><hi rend="majuscule initiale_filigranee">B</hi>ien nos
                   &s-long;o&s-long;fi&s-long;t une fille</l>
                <l facs="#l23"> que nos a&v;ons. detenons nos li uns</l>
                <l facs="#l24"> de lautre.qe no&s-long; pui&s-long;&s-long;ons e&s-long;tre pur a</l>
                <l facs="#l25" part="I"> &v;euc les eslux no&s-long;tre &s-long;igno&r-rond;.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l25" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant la da</l>
                <l facs="#l26"> me oi ce elle ot molt grant &j;oie &et-tironien; rendi</l>
                <l facs="#l27" part="I"> graces a no&s-long;tre &s-long;igno&r-rond; &et-tironien;
                   di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l27" part="F"><hi rend="majuscule initiale_filigranee">B</hi>eneoiz</l>
                <l facs="#l28">&s-long;oit dex qi ta amene ala conoi&s-long;&s-long;ance</l>
                <l facs="#l29" part="I"> de &v;erite.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l29" part="F"><hi rend="majuscule initiale_filigranee">M</hi>eintes foiz ai
                   p&r-rond;ie no&s-long;tre</l>
                <l facs="#l30">&s-long;igno&r-rond; de ce mes &j;e ne le co&s-long;ai onqes</l>
                <l facs="#l31" part="I"> manife&s-long;ter. </l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l31" part="F"><hi rend="majuscule initiale_filigranee">A</hi>p&r-rond;es ce
                      <persName ref="#antigonus"><hi rend="minuscule">A</hi>ntigonus</persName>
                   de</l>
                <l facs="#l32"> parti a&s-long; po&v;res grant partie de &s-long;on a-</l>
                <l facs="#l33" part="I">&v;oir &et-tironien; mo&r-rond;ut en cel an.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l33" part="F"><hi rend="majuscule initiale_filigranee">I</hi>l
                   &et-tironien; &s-long;a feme</l>
                <l facs="#l34">&v;e&s-long;quirent en&s-long;emble .ii. anz. &et-tironien;. vi .
                   mo-</l>
                <l facs="#l35"> is.&et-tironien; furent un des anz en continance.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l36"><hi rend="majuscule initiale_filigranee">Q</hi>ant <persName
-                     ref="#antigonus"><hi rend="minuscule">A</hi>ntigonus</persName> fu mo&r-rond;z: li em<choice>
+                     ref="#antigonus"><hi rend="minuscule">A</hi>ntigonus</persName> fu mo&r-rond;z:
+                  li em<choice>
                      <abbr>pe</abbr>
                      <expan>pereu</expan>
                   </choice>res</l>
@@ -642,8 +652,8 @@
                <l facs="#l39"> de <placeName ref="#rome"><hi rend="minuscule">R</hi>ome</placeName>.
                   &et-tironien; ele n a&v;oit qe v anz.qant</l>
                <l facs="#l40" part="I"> ele otroia le mariage.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l40" part="F"><hi rend="majuscule initiale_filigranee">A</hi>p&r-rond;es ce
                   &s-long;a me- </l>
                <l facs="#l41"> re l amena en <placeName ref="#egypte"><hi rend="minuscule"
@@ -652,8 +662,8 @@
                      <expan>grant</expan>
                   </choice></l>
                <l facs="#l42" part="I"> terre de par &s-long;on pere.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l42" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant eles
                   fu-</l>
                <l facs="#l43"> rent en <placeName ref="#egypte"><hi rend="minuscule"
@@ -665,27 +675,27 @@
                <l facs="#l45"> tes femes. &et-tironien; le&s-long; genz en di&s-long;oient molt</l>
                <l facs="#l46"> grant bien. Elles ne be&v;oient pa&s-long; de</l>
                <l facs="#l47" part="I">&v;in.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l47" part="F"><hi rend="majuscule initiale_filigranee">L</hi>or &v;iande
                   e&s-long;toit une foiz l'eun</l>
                <l facs="#l48" part="I"> autre foi chous.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l48" part="F"><hi rend="majuscule initiale_filigranee">L</hi>es une&s-long; &s-long;atenoi<choice>
                      <abbr>e</abbr>
                      <expan>en</expan>
                   </choice>t</l>
-            </lg>
+            </p>
          </div>
          <div type="section">
             <cb type="right"/>
-            <lg>
+            <p>
                <l facs="#l49"> ii &j;orz de mengier <hi rend="majuscule initiale_filigranee"
                   >l</hi>es autre iii <hi rend="majuscule initiale_filigranee">e</hi>lles</l>
                <l facs="#l50" part="I"> na&v;oient nule cure de lo&r-rond; co&r-rond;s.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l50" part="F"><hi rend="majuscule initiale_filigranee"
                   >C</hi>ha&s-long;cu-</l>
                <l facs="#l51"> ne gi&s-long;oit &s-long;eur une heire. &et-tironien; lo&r-rond;
@@ -693,14 +703,15 @@
                <l facs="#l52"> e&s-long;toit de heire. &et-tironien; &s-long;e aucune cheoit en
                   en-</l>
                <l facs="#l53" part="I"> fermete ele neu&s-long;t aide qe de deu.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l53" part="F"><hi rend="majuscule initiale_filigranee">N</hi>ules</l>
-               <l facs="#l54">deles ni&s-long;&s-long;oit fo&r-rond;s de&s-long; po&r-rond;tes. mes il i a</l>
+               <l facs="#l54">deles ni&s-long;&s-long;oit fo&r-rond;s de&s-long; po&r-rond;tes. mes
+                  il i a</l>
                <l facs="#l55">&v;oit une po&r-rond;tiere qi parloit a ceus qi</l>
                <l facs="#l56" part="I">&v;enoient defo&r-rond;s.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l56" part="F"><hi rend="majuscule initiale_filigranee">N</hi>o&s-long;tre
                   &s-long;ires fe&s-long;oit</l>
                <l facs="#l57"> leenz meins miracles po&r-rond; le &s-long;e<choice>
@@ -711,8 +722,8 @@
                      <expan>on</expan>
                   </choice></l>
                <l facs="#l58" part="I">&v;er&s-long;ation.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l58" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant <persName
                      ref="#eufrase-mere"><hi rend="minuscule">E</hi>ufrai&s-long;e</persName>
                   &s-long;ot la <choice>
@@ -725,8 +736,8 @@
                   </choice>rge&s-long; ele ﻿&p-barre;la</l>
                <l facs="#l60" part="I"> a <persName ref="#abbesse"
                   >labee&s-long;&s-long;e</persName>: &et-tironien; li di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l60" part="F"><hi rend="majuscule initiale_filigranee">D</hi>ame &j;e doing
                   a ce&s-long;t</l>
                <l facs="#l61"> leu po&r-rond; bene<choice>
@@ -737,11 +748,11 @@
                      <abbr>t</abbr>
                      <expan>ter</expan>
                   </choice>enine qi e&s-long;t</l>
-               <l facs="#l63"> ma fille &et-tironien; po&r-rond; l ame &s-long;on pere. &et-tironien; l
-                     <persName ref="#abbesse">abee&s-long;&s-long;e</persName></l>
+               <l facs="#l63"> ma fille &et-tironien; po&r-rond; l ame &s-long;on pere.
+                  &et-tironien; l <persName ref="#abbesse">abee&s-long;&s-long;e</persName></l>
                <l facs="#l64" part="I"> li re&s-long;pondi.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l64" part="F">
                   <hi rend="majuscule initiale_filigranee">N</hi>os ne &v;olons a&v;oir en
                   ce&s-long;t</l>
@@ -749,20 +760,20 @@
                <l facs="#l66"> dons le cele&s-long;tiel reigne: mes &s-long;e tu &v;euz</l>
                <l facs="#l67"> a&v;oir le loier d o&s-long;frende. o&s-long;fre cire ou</l>
                <l facs="#l68" part="I"> huile au mo&s-long;tier.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l68" part="F"><hi rend="majuscule initiale_filigranee">A</hi>pres
                   di&s-long;t l <persName ref="#abbesse">abee&s-long;&s-long;e</persName></l>
                <l facs="#l69" part="I"> a l enfant au&s-long;&s-long;i &neuf-tironien;me par
                   geu.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l69" part="F"><hi rend="majuscule initiale_filigranee">P</hi>ucele</l>
                <l facs="#l70"> remand&r-rond;as tu a&v;euc nos po&r-rond; &v;eoir</l>
                <l facs="#l71"> no&s-long;tre con&v;er&s-long;ation.&et-tironien; la pucele
                   di&s-long;t: </l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l72"><hi rend="majuscule initiale_filigranee">S</hi>e ma mere ne &s-long;
                   en co&r-rond;rocoit: &j;e ni&s-long;te</l>
                <l facs="#l73"> roie i ames de ceenz.&et-tironien; l <persName ref="#abbesse"
@@ -770,28 +781,28 @@
                <l facs="#l74">aimes nos tu plus qe ton mari &et-tironien; la</l>
                <l facs="#l75"> pucele di&s-long;t: il ne me conut onques ne</l>
                <l facs="#l76" part="I"> &j;e lui.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l76" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant la mere oi
                   ce: ele comen-</l>
                <l facs="#l77" part="I"> ca a plo&r-rond;er de pitie &et-tironien; di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l77" part="F"><hi rend="majuscule initiale_filigranee">B</hi>ele fille al<choice>
                      <abbr>o</abbr>
                      <expan>on</expan>
                   </choice>s</l>
                <l facs="#l78" part="I">a l o&s-long;tel que il a&v;e&s-long;p&r-rond;i&s-long;t
                   &et-tironien; ele di&s-long;t a li.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l78" part="F"><hi rend="majuscule initiale_filigranee">J</hi>e</l>
                <l facs="#l79"> remanrai a&v;euc l <persName ref="#abbesse"
                      >abee&s-long;&s-long;e</persName>. &et-tironien; l <persName ref="#abbesse"
                      >abee&s-long;&s-long;e</persName></l>
                <l facs="#l80" part="I"> li di&s-long;t: </l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l80">
                   <hi rend="majuscule initiale_filigranee">T</hi>u ne puez ceenz remanoir
                   &s-long;e</l>
@@ -807,17 +818,17 @@
                <l facs="#l86"> nirai plus a&v;euc ma dame. &et-tironien; l <persName ref="#abbesse"
                      >abee&s-long;&s-long;e</persName></l>
                <l facs="#l87" part="I"> di&s-long;t</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l87" part="F"><hi rend="majuscule initiale_filigranee">B</hi>eaus
                   &s-long;ire rois des cieus otroie</l>
                <l facs="#l88"> a ce&s-long;te pucele qe ele &v;i&v;e &s-long;elont te&s-long;
                   co-</l>
-               <l facs="#l89"> mandemenz. &et-tironien; lo&r-rond;s la de&s-long;&v;e&s-long;ti de sa
-                  ro-</l>
+               <l facs="#l89"> mandemenz. &et-tironien; lo&r-rond;s la de&s-long;&v;e&s-long;ti de
+                  sa ro-</l>
                <l facs="#l90" part="I"> be &et-tironien; li &v;e&s-long;ti robe de nonein.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l90" part="F"><hi rend="majuscule initiale_filigranee">L</hi>a mere</l>
                <l facs="#l91"> be&s-long;a &s-long;a fille &et-tironien; i&s-long;&s-long;i de la
                   beie. &et-tironien; a la par les</l>
@@ -825,20 +836,20 @@
                   aumo&s-long;nes</l>
                <l facs="#l93"> &et-tironien; au&s-long;&s-long;int a&s-long; po&v;res &et-tironien;
                   a&s-long; o&r-rond;fenins. &et-tironien; ge-</l>
-               <l facs="#l94"> unoit toz les &j;o&r-rond;z de&s-long; qa &v;e&s-long;p&r-rond;es. &et-tironien; ne
-               </l>
-            </lg>
+               <l facs="#l94"> unoit toz les &j;o&r-rond;z de&s-long; qa &v;e&s-long;p&r-rond;es.
+                  &et-tironien; ne </l>
+            </p>
          </div>
-         <pb xml:id="folio-225vb"/>
+         <pb facs="#folio-225v"/>
          <div type="entete">
-            <lg>
+            <p>
                <l facs="#entete2"><persName ref="#eufrase-fille"><hi rend="majuscule"
                      >EUFRASE</hi></persName></l>
-            </lg>
+            </p>
          </div>
          <div type="section">
             <cb type="right"/>
-            <lg>
+            <p>
                <l facs="#l95">
                   <hi rend="majuscule initiale_filigranee">M</hi>engoit &s-long;eleun non <hi
                      rend="majuscule initiale_filigranee">D</hi>u chous <hi
@@ -846,71 +857,72 @@
                <l facs="#l96"> demo&r-rond;a gueres que ele re&v;int en l abeie</l>
                <l facs="#l97" part="I"> &et-tironien; l <persName ref="#abbesse"
                      >abee&s-long;&s-long;e</persName> l apela &et-tironien; li di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l97" part="F"><persName ref="#eufrase-mere"><hi
                         rend="majuscule initiale_filigranee">E</hi>ufrai&s-long;e</persName>
                   e&s-long;cote</l>
                <l facs="#l98"> une a&v;i&s-long;ion qe &j;e ai &v;eue en ce&s-long;te nuit. &j;e</l>
                <l facs="#l99">&v;i <persName ref="#antigonus"><hi rend="minuscule"
                      >A</hi>ntigonam</persName> ton baron en grant gloire</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l100">
                   <hi rend="majuscule initiale_filigranee">E</hi>t p&r-rond;ioit no&s-long;tre
                   &s-long;eigno&r-rond; que il te garda&s-long;t</l>
                <l facs="#l101" part="I"> de ce&s-long;t monde.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l101" part="F">
                   <hi rend="majuscule initiale_filigranee">Q</hi>ant <persName ref="#eufrase-mere"
                         ><hi rend="minuscule">E</hi>ufrai&s-long;e</persName> oi ce ele</l>
                <l facs="#l102" part="I"> eut &j;oie.&et-tironien; di&s-long;t a &s-long;a fille:</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l102" part="F">
                   <hi rend="majuscule initiale_filigranee">B</hi>ele fille p&r-rond;<choice>
                      <abbr>e</abbr>
                      <expan>end</expan>
                   </choice></l>
                <l facs="#l103"> toute la &s-long;ub&s-long;tance ton pere &et-tironien; de part</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l104">
                   <hi rend="majuscule initiale_filigranee">T</hi>out as po&v;res qe nous
                   &et-tironien; il aions</l>
                <l facs="#l105"> eritage es cieus.&et-tironien; ne di pas del linage</l>
                <l facs="#l106"> &j;e &v;oi. mes fai toi po&v;re en terre qe tu</l>
                <l facs="#l107" part="I"> &s-long;oies riche es cieus. </l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l107" part="F">
                   <hi rend="majuscule initiale_filigranee">D</hi>e ce &et-tironien; d autres
                   cho-</l>
-               <l facs="#l108">&s-long;es amone&s-long;ta ele &s-long;a fille &et-tironien; mo&r-rond;ut au
-                  ti-</l>
+               <l facs="#l108">&s-long;es amone&s-long;ta ele &s-long;a fille &et-tironien;
+                  mo&r-rond;ut au ti-</l>
                <l facs="#l109" part="I"> erz &j;o&r-rond;.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l109" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant li
                   empereres oi qe &s-long;a cou-</l>
-               <l facs="#l110">&s-long;ine e&s-long;toit mo&r-rond;te. il manda a &s-long;a fille que</l>
+               <l facs="#l110">&s-long;ine e&s-long;toit mo&r-rond;te. il manda a &s-long;a fille
+                  que</l>
                <l facs="#l111" part="I"> ele sen &v;eni&s-long;t a &s-long;on mari.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l111" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant <persName
                      ref="#eufrase-fille"><hi rend="minuscule">E</hi>ufra&s-long;e</persName>.</l>
                <l facs="#l112"> la pucele oi ce ele &neuf-tironien;menca a &s-long;o&r-rond;rire
                   &et-tironien; di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l113">
                   <hi rend="majuscule initiale_filigranee">L</hi>e&s-long;&s-long;erai &j;e
                   &j;e&s-long;u cri&s-long;t &et-tironien; irai a un home qe</l>
                <l facs="#l114"> &v;er mengeront qi e&s-long;t hui &et-tironien; demein ne</l>
                <l facs="#l115" part="I">&s-long;era pas.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l115" part="F">
                   <hi rend="majuscule initiale_filigranee">C</hi>ele manda par cez
                   mei&s-long;mes</l>
@@ -924,16 +936,16 @@
                <l facs="#l119">&s-long;u cri&s-long;t.&et-tironien; le &v;oloit &s-long;eruir
                   &s-long;anz empeece-</l>
                <l facs="#l120" part="I"> ment de terrienes cho&s-long;es.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l120" part="F"><persName ref="#eufrase-fille"><hi
                         rend="majuscule initiale_filigranee">E</hi>ufra&s-long;e</persName>
                   &s-long;i</l>
                <l facs="#l121"> na&v;oit qe.xii. anz: qant ele comenca</l>
-               <l facs="#l122"> a labo&r-rond;er el &s-long;er&v;ice no&s-long;tre &s-long;igno&r-rond;
-                  &j;e&s-long;u cri&s-long;t.</l>
-            </lg>
-            <lg>
+               <l facs="#l122"> a labo&r-rond;er el &s-long;er&v;ice no&s-long;tre
+                  &s-long;igno&r-rond; &j;e&s-long;u cri&s-long;t.</l>
+            </p>
+            <p>
                <l facs="#l123">
                   <hi rend="majuscule initiale_filigranee">A</hi>u comencement geuna de&s-long; qa
                   &v;e&s-long;p&r-rond;es.</l>
@@ -943,8 +955,8 @@
                <l facs="#l126"> toit toz les &j;o&r-rond;z le&v;e a la cui&s-long;ine. &et-tironien;
                   fe&s-long;oit</l>
                <l facs="#l127" part="I"> tote &s-long;eule qan quil a&v;oit leenz a fere.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l127" part="F"><hi rend="majuscule initiale_filigranee">L</hi>a</l>
                <l facs="#l128"> co&s-long;tume de labeie e&s-long;toit tele.qe qant.</l>
                <l facs="#l129"> aucune des &s-long;ereurs e&s-long;toit tempt<choice>
@@ -953,14 +965,14 @@
                   </choice>e en</l>
                <l facs="#l130"> &s-long;on do&r-rond;mant: ele recontoit &s-long;a tempta-</l>
                <l facs="#l131"> tion a <persName ref="#abbesse"
-                  >labee&s-long;&s-long;e</persName>.&et-tironien; ele p&r-rond;ioit po&r-rond; li &et-tironien;
-                  li cou-</l>
+                  >labee&s-long;&s-long;e</persName>.&et-tironien; ele p&r-rond;ioit po&r-rond; li
+                  &et-tironien; li cou-</l>
                <l facs="#l132"> mandoit qe ele mei&s-long;t pierres en &s-long;on lit</l>
                <l facs="#l133"> &et-tironien; geu&s-long;t &s-long;us: tant qe li deables &s-long;e
                   de par-</l>
                <l facs="#l134" part="I"> te&s-long;i&s-long;t de li.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l134" part="F"><persName ref="#eufrase-fille"><hi
                         rend="majuscule initiale_filigranee">E</hi>ufrai&s-long;e</persName> fu tempt<choice>
                      <abbr>e</abbr>
@@ -970,22 +982,24 @@
                   &et-tironien;</l>
                <l facs="#l136" part="I"> qant <persName ref="#abbesse"
                      >labee&s-long;&s-long;e</persName> le &s-long;ot ele li di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l136" part="F">
                   <hi rend="majuscule initiale_filigranee">P</hi>o&r-rond; qoi ne</l>
-               <l facs="#l137"> me deis tu ta temptation. &et-tironien; &j;e p&r-rond;ia&s-long;ce po&r-rond;</l>
+               <l facs="#l137"> me deis tu ta temptation. &et-tironien; &j;e p&r-rond;ia&s-long;ce
+                  po&r-rond;</l>
                <l facs="#l138"> toi. tu a&s-long; comencie a combatre. &s-long;o&s-long;tien</l>
                <l facs="#l139"> fo&r-rond;ment la bataille qe tu pui&s-long;&s-long;es &v;ein-</l>
-               <l facs="#l140" part="I"> cre. &et-tironien; e&s-long;tre co&r-rond;onee es cieus.</l>
-            </lg>
-            <lg>
+               <l facs="#l140" part="I"> cre. &et-tironien; e&s-long;tre co&r-rond;onee es
+                  cieus.</l>
+            </p>
+            <p>
                <l facs="#l140" part="F"><hi rend="majuscule initiale_filigranee">A</hi>utre foiz</l>
-            </lg>
+            </p>
          </div>
          <div type="section">
             <cb type="left"/>
-            <lg>
+            <p>
                <l facs="#l141"> fu tempt<choice>
                      <abbr>e</abbr>
                      <expan>é</expan>
@@ -998,8 +1012,8 @@
                <l facs="#l144"> e&s-long;&v;eillierent: &et-tironien; labee&s-long;&s-long;e la
                   confo&r-rond;ta molt</l>
                <l facs="#l145" part="I"> par douces paroles.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l145" part="F"><hi rend="majuscule initiale_filigranee">L</hi>es
                   &s-long;ereurs amoi<choice>
                      <abbr>e</abbr>
@@ -1010,8 +1024,8 @@
                <l facs="#l147"> me&s-long; une de les a&v;oit molt grant en-</l>
                <l facs="#l148"> &v;ie &v;ers li &et-tironien; di&s-long;t meintes fois mal de</l>
                <l facs="#l149" part="I"> li par derriers.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l149" part="F">
                   <hi rend="majuscule initiale_filigranee">C</hi>ele di&s-long;t une foiz que</l>
                <l facs="#l150">
@@ -1022,14 +1036,14 @@
                <l facs="#l152"> la &s-long;emeine. &et-tironien; &v;oloit e&s-long;tre <persName
                      ref="#abbesse">abee&s-long;&s-long;e</persName> ap&r-rond;es</l>
                <l facs="#l153" part="I"> li.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l153" part="F"><hi rend="majuscule initiale_filigranee">Q</hi>ant <persName
                      ref="#abbesse">labee&s-long;&s-long;e</persName> le &s-long;ot ele
                   cha&s-long;tia cele</l>
                <l facs="#l154" part="I"> &et-tironien; li di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l154" part="F">
                   <hi rend="majuscule initiale_filigranee">Q</hi>ue ta fo&r-rond;fet <persName
                      ref="#eufrase-fille"><hi rend="minuscule">E</hi>ufrai&s-long;e</persName>: tu
@@ -1044,8 +1058,8 @@
                      <expan>é</expan>
                   </choice>e qe ele te &s-long;ert</l>
                <l facs="#l159" part="I"> po&r-rond; deu. </l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l159" part="F">
                   <hi rend="majuscule initiale_filigranee">U</hi>n &j;o&r-rond; ala <persName
                      ref="#eufrase-fille"><hi rend="minuscule">E</hi>ufrai&s-long;e</persName> au
@@ -1054,23 +1068,23 @@
                   &et-tironien;</l>
                <l facs="#l161"> ele &neuf-tironien;menea a crier &j;e&s-long;u cri&s-long;t aide
                   moi.&et-tironien;</l>
-               <l facs="#l162"> les &s-long;ereurs co&r-rond;urent la &et-tironien; le tre&s-long;trent
-                  fo&r-rond;s</l>
+               <l facs="#l162"> les &s-long;ereurs co&r-rond;urent la &et-tironien; le
+                  tre&s-long;trent fo&r-rond;s</l>
                <l facs="#l163"> &et-tironien; ele not onqes point de mal: &et-tironien; se
                   &s-long;eig-</l>
                <l facs="#l164" part="I">na lo&r-rond;s &et-tironien; di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l164" part="F">
                   <hi rend="majuscule initiale_filigranee">T</hi>u pie&s-long;mes deables me</l>
                <l facs="#l165" part="I"> cuides &v;eintre mes iete &v;einterai.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l165" part="F"><hi rend="majuscule initiale_filigranee">J</hi>e</l>
                <l facs="#l166"> ne &s-long;oloie po&r-rond;ter a la cuisine. qe plein &s-long;el</l>
                <l facs="#l167"> le deue. do&r-rond;e en a&v;ant en i po&r-rond;terai II</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l168">
                   <persName ref="#eufrase-fille"><hi rend="majuscule initiale_filigranee"
                      >E</hi>ufrai&s-long;e</persName> &s-long;umelia plus a&s-long;&s-long;ez de
@@ -1078,20 +1092,21 @@
                <l facs="#l169"> ele na&v;oit fet de&v;ant car ele geunoit</l>
                <l facs="#l170" part="I"> plus. &et-tironien; plus &v;eilloit en
                   o&r-rond;i&s-long;&s-long;ons.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l170" part="F"><hi rend="majuscule initiale_filigranee">E</hi>t</l>
-               <l facs="#l171"> no&s-long;tre &s-long;ires fe&s-long;oit meinz miracles po&r-rond;</l>
+               <l facs="#l171"> no&s-long;tre &s-long;ires fe&s-long;oit meinz miracles
+                  po&r-rond;</l>
                <l facs="#l172" part="I"> li.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l172" part="F"><hi rend="majuscule initiale_filigranee">U</hi>ne nuit uit
                      <persName ref="#abbesse">labee&s-long;&s-long;e</persName> une a
                   &v;i&s-long;ion</l>
                <l facs="#l173"> de li. &et-tironien; la reconta a&s-long; &s-long;ereurs
                   &et-tironien; lo&r-rond; di&s-long;t.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l174">
                   <hi rend="majuscule initiale_filigranee">J</hi>e &v;i me&s-long;&s-long;ages qi
                   &v;ind&r-rond;ent qerre <persName ref="#eufrase-fille"><hi rend="minuscule"
@@ -1099,8 +1114,8 @@
                <l facs="#l175" part="I">
                   <persName ref="#eufrase-fille">&s-long;e</persName>: &et-tironien; me
                   di&s-long;trent.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l175" part="F"><hi rend="majuscule initiale_filigranee">A</hi>pele
                      <persName ref="#eufrase-fille"><hi rend="minuscule"
                      >E</hi>ufrai&s-long;e</persName> &et-tironien; lame-</l>
@@ -1114,23 +1129,24 @@
                   p&r-rond;e&s-long;enterent</l>
                <l facs="#l180">
                   <persName ref="#eufrase-fille"><hi rend="minuscule"
-                     >E</hi>ufrai&s-long;e</persName> a no&s-long;tre &s-long;igno&r-rond;. &et-tironien;
-                  li di&s-long;trent</l>
+                     >E</hi>ufrai&s-long;e</persName> a no&s-long;tre &s-long;igno&r-rond;.
+                  &et-tironien; li di&s-long;trent</l>
                <l facs="#l181"> &v;oiz ici ton loier. ici &s-long;erras tu toz &j;o&r-rond;s</l>
                <l facs="#l182" part="I"> mes.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l182" part="M"><hi rend="majuscule initiale_filigranee">C</hi>e&s-long;te a
                   &v;i&s-long;ion &v;it <persName ref="#abbesse"
                   >labee&s-long;&s-long;e</persName>.</l>
-            </lg>
-            <lg>
+            </p>
+            <p>
                <l facs="#l182" part="F"><hi rend="majuscule initiale_filigranee">L</hi>a</l>
-               <l facs="#l183"> nuit: &et-tironien; lendemein mo&r-rond;ut <persName ref="#eufrase-fille"
-                        ><hi rend="minuscule">E</hi>ufrai&s-long;e</persName>. &et-tironien; no-</l>
+               <l facs="#l183"> nuit: &et-tironien; lendemein mo&r-rond;ut <persName
+                     ref="#eufrase-fille"><hi rend="minuscule">E</hi>ufrai&s-long;e</persName>.
+                  &et-tironien; no-</l>
                <l facs="#l184"> &s-long;tre &s-long;ires li rendi la co&r-rond;one es cieus que</l>
                <l facs="#l185" part="I"> ele a&v;oit de &s-long;er&v;ie en terre.</l>
-            </lg>
+            </p>
          </div>
       </body>
    </text>
