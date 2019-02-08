@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Séquence de sainte Eulalie</title>
+         </titleStmt>
+         <publicationStmt>
+            <p part="N">Texte édité dans la cadre d'un exercice de XML-TEI à l'école nationale des
+               Chartes</p>
+         </publicationStmt>
+         <sourceDesc default="false">
+            
+            <msDesc status="draft">
+               <msIdentifier>
+                  <settlement>Valencienne</settlement>
+                  <repository>Bibliothèque municipale</repository>
+                  <idno>150</idno>
+               </msIdentifier>
+               <p part="N">Texte issu de wikisource France :
+                  https://fr.wikisource.org/wiki/Séquence_de_sainte_Eulalie</p>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <creation>
+            <date instant="false">880</date>
+            <country>Abbaye de Saint-Amant</country>
+            <lang xml:lang="fro" opt="false"/>
+         </creation>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Texte de la vie de Sainte-Eulalie.<lg type=" orig ">
+               <head>SÉQUENCE DE SAINT EULALIE</head>
+               <l n="1">Buona pulcella fut eulalia.</l>
+               <l n="2">Bel avret corps bellezour anima.</l>
+            
+               <l n="3">Voldrent la veintre li dõ inimi.</l>
+               <l n="4">Voldrent la faire diavle servir.</l>
+            
+               <l n="5">Elle nont eskoltet les mals conselliers.</l>
+               <l n="6">Quelle dõ raneiet chi maent .</l>
+            
+               <l n="7">Ne por or ned argent ne paramenz.</l>
+               <l n="8">Por manatce regiel ne preiement.</l>
+            
+               <l n="9">Niule cose non la pouret om pleier.</l>
+               <l n="10">La polle sempre ñ amast lo dõ .</l>
+            
+               <l n="11">E poro fut sentede maximiien.</l>
+               <l n="12">Chi rex eret a cels dis soure pagiens.</l>
+            
+               <l n="13">Illi en ortet dont lei non chielt.</l>
+               <l n="14">Qued elle fuiet lo nom xien.</l>
+            
+               <l n="15">Ellent adunet lo suon element</l>
+               <l n="16">Melz sostendreiet les empedementz.</l>
+            
+               <l n="17">Quelle desse sa virginitet.</l>
+               <l n="18">Poros suret morte a grand honestet.</l>
+            
+               <l n="19">Enz enl fou lo getterent com arde tost.</l>
+               <l n="20">Elle colpes ñ avret poro .</l>
+            
+               <l n="21">Aczo nos voldret concreidre li rex pagiens.</l>
+               <l n="22">Ad une spede li roveret .</l>
+            
+               <l n="23">La domnizelle celle kose ñ contredist.</l>
+               <l n="24">Volt lo seule lazsier si ruovet krist.</l>
+            
+               <l n="25">In figure de colomb volat a ciel.</l>
+               <l n="26">Tuit oram que pornos degnet preier.</l>
+            
+               <l n="27">Qued avuisset de nos xs mercit</l>
+               <l n="28">Post la mort &amp; alui nos laist venir.</l>
+               <l n="29">Par souue clementia.</l>
+            </lg>
+            <lg>
+               <head>reg</head>
+               <l n="1">Buona pulcella fut Eulalia.</l>
+               <l n="2">Bel auret corps bellezour anima.</l>
+            
+               <l n="3">Voldrent la veintre li dom inimi.</l>
+               <l n="4">Voldrent la faire diavle servir.</l>
+            
+               <l n="5">Elle nont eskoltet les mals conselliers.</l>
+               <l n="6">Quelle dom raneiet chi maent .</l>
+            
+               <l n="7">Ne por or ned argent ne paramenz.</l>
+               <l n="8">Por manatce regiel ne preiement.</l>
+            
+               <l n="9">Niule cose non la pouret om pleier.</l>
+               <l n="10">La polle sempre non amast lo dom .</l>
+            
+               <l n="11">E por o fut presentede Maximiien.</l>
+               <l n="12">Chi rex eret a cels dis soure pagiens.</l>
+            
+               <l n="13">Il li en ortet dont lei non chielt.</l>
+               <l n="14">Qued elle fuiet lo nom xristien.</l>
+            
+               <l n="15">Ellent adunet lo suon element</l>
+               <l n="16">Melz sostendreiet les empedementz.</l>
+            
+               <l n="17">Quelle predesse sa virginit et.</l>
+               <l n="18">Por os suret morte a grand honestet.</l>
+            
+               <l n="19">Enz enl fou lo getterent com arde tost.</l>
+               <l n="20">Elle colpes non avret por o .</l>
+            
+               <l n="21">A czo nos voldret concreidre li rex pagiens.</l>
+               <l n="22">Ad une spede li roveret .</l>
+            
+               <l n="23">La domnizelle celle kose non contredist.</l>
+               <l n="24">Volt lo seule lazsier si ruovet krist.</l>
+            
+               <l n="25">In figure de colomb volat a ciel.</l>
+               <l n="26">Tuit oram que por nos degnet preier.</l>
+            
+               <l n="27">Qued avuisset de nos xristus mercit</l>
+               <l n="28">Post la mort et a lui nos laist uenir.</l>
+               <l n="29">Par souue clementia.</l>
+            </lg>
+         </head>
+      </body>
+   </text>
+</TEI>
