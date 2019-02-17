@@ -38,7 +38,7 @@
 
     <xsl:template match="app">
         <xsl:copy>
-            <!--   <xsl:if test="(contrains(rdg/@wit='#P')">
+            <!--   <xsl:if test="(contains(rdg/@wit='#P')">
                 <xsl:copy-of select="rdg"/>
             </xsl:if> -->
             <xsl:apply-templates/>
@@ -54,7 +54,7 @@
             <xsl:copy-of select="."/>
         </xsl:if>
     </xsl:template>-->
-
+    <!-- 
     <xsl:template match="rdg">
         <xsl:choose>
             <xsl:when test="contains(@wit, '#Z')">
@@ -79,6 +79,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+     -->
+
     <!--  
     <xsl:template match="app">
         <xsl:copy>
@@ -97,7 +99,7 @@
         </xsl:copy>
     </xsl:template>
     -->
-
+    <!--  
     <xsl:template match="app">
         <xsl:copy>
             <xsl:element name="rdgGrp">
@@ -122,6 +124,28 @@
                     <xsl:copy-of select="."/>
                 </xsl:for-each>
             </xsl:element>
+        </xsl:copy>
+    </xsl:template>
+    -->
+
+
+    <xsl:template match="app">
+        <xsl:copy>
+            <xsl:for-each-group select="rdg" group-by="@type">
+                <xsl:element name="rdg">
+                    <xsl:attribute name="type">
+                        <xsl:value-of select="current-grouping-key()"/>
+                    </xsl:attribute>
+                    <xsl:for-each select="current-group()">
+                        <xsl:element name="rdg">
+                            <xsl:attribute name="wit">
+                                <xsl:value-of select="@wit"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="."/>
+                        </xsl:element>
+                    </xsl:for-each>
+                </xsl:element>
+            </xsl:for-each-group>
         </xsl:copy>
     </xsl:template>
 

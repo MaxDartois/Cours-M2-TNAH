@@ -27,7 +27,6 @@
     </xsl:template>
 
     <xsl:template match="lg">
-  
         <xsl:variable name="variable">
             <xsl:element name="head">
                 <xsl:value-of select="upper-case(preceding-sibling::head)"/>
