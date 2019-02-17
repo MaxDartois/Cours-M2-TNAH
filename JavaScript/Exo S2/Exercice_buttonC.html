@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercices Cours 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> <!-- Je ne sais pas à quoi correspond, ce morceau, qui peut me l'expliquer? -->
+	</head>
+	<body>
+		<div class="container">
+			<form style="margin-top:50px;"> <!-- présence de CSS dans le code html -->
+			  <div class="form-group"> <!-- Les classes en HTML permettent d'attribuer desattributs ou des règles de styles communes à plusieurs éléments portant cet attribut class. -->
+			  	<div class="row">
+				    <label class="col-md-6" for="nom-princ">Nom de la ville</label> <!-- le premier attritbut indique ou l'élément se trouvera sur la page selon la division bootstrap en 12 colones -->
+				    <div class="col-md-6" id="add-lang-container"> <!-- Un id, contrairement à une classe est un identifiant unique pour un élément -->
+					    <input type="text" class="form-control" id="nom-princ" placeholder="Nom principal de la ville"> <!-- cette balise indique ce qui se trouve dans <div> est un élément de type texte --> 
+
+					    <a class="btn btn-primary" id="add-lang" href="#">+</a> <!-- la balise a indique la présence d'un lien, la class indique que l'élément est un bouton-->
+				    </div>
+				</div>
+			  </div>
+			</form>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- Cette première balise de javascript permet d'indiquer que la librairie jquery va être utilisé-->
+		<script type="text/javascript">
+			$(document).ready(function($){ // cette ligne indique que le document est prêt pour le jquery
+				// Votre code ici !
+				$("#add-lang").on("click", function(evenement) { //on sélection le bouton #add-lang au moment du clique
+					evenement.preventDefault(); //on commence par retirer au bouton sa fonction par défaut
+					var html = $(`<div class="row">
+						<div class="col-md-4">
+							<input class="form-control" placeholder="Variante de nom" type="text" name="nom-supp[]" />
+						</div>
+						<div class="col-md-4">
+							<input class="form-control" placeholder="Langue de la variante" type="text" name="lang-supp[]" />
+						</div>
+						<div class="col-md-4">
+						</div>
+						</div>`); //on créé une variable html pour coder l'élément qui apparaitra à l'écran après le clique sur #add-lang
+					var remove_button = $(`<a href="#" class="btn btn-danger del-lang">-</a>`); //création d'une variable remove_button en cas d'erreur de la part de l'utilisateur
+					remove_button.on("click", function(event) {
+						event.preventDefault();
+						html.remove();
+					}); //lors du clique sur remove_button, on stop l'action par défaut et on enclenche la suppression de  la dernière varaible html mise en place.
+					html.find(".col-md-4:last").append(remove_button); //.col-md-4:last ?? à quoi ça sert?? 
+
+					$("#add-lang-container").append(html); //ajout de l'élément lang container à la variable html. 
+				});
+			});
+		</script>
+	</body>
+</html>

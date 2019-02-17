@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercices Cours 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nom de la ville </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+  </form>
+		</div>
+
+		<a href="#" class="btn">Lien</a>
+		<a href="http://www.chartes.psl.eu" class="btn">Lien Chartes</a>
+		<article id="article_1">
+			<header class="sub-info">Titre</header>
+			<section>Lorem Ipsum</section>
+			<footer class="sub-info">Auteur</footer>
+		</article>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function($){
+				// Votre code ici !
+				$(".btn").on("click", function(event) {
+					event.preventDefault();
+					var that = $(this);
+					that.addClass("btn-success");
+				});
+			});
+		</script>
+	</body>
+</html>

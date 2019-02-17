@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+<script type="text/javascript">
+
+	var texte = {
+		"meta":"line",
+		"author":"aeschylus",
+		"credit":"OpenGreekAndLatin",
+		"urn":"urn:cts:greekLit:tlg0085.tlg007.opp-grc3-simple",
+		"text": [
+				"Πρῶτον μὲν εὐχῇ τῇδε πρεσβεύω θεῶν",
+				"τὴν πρωτόμαντιν Γαῖαν: ἐκ δὲ τῆς Θέμιν,",
+				"ἣ δὴ τὸ μητρὸς δευτέρα τόδ ̓ ἕζετο",
+				"μαντεῖον, ὡς λόγος τις: ἐν δὲ τῷ τρίτῳ",
+		]
+}
+
+var html = '<article><header>'+ texte["author"]+'</header><ul>';
+for (var i = 0; i <= texte["text"].length - 1; i++) {
+	html = html + '<li>' + texte["text"][i] + '</li>'; 
+}
+
+html = html + '</ul><footer>'+texte["credit"]+'</footer></article>';
+
+alert(html);
+
+</script>
+
+</body>
+</html>

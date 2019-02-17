@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercice 4</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript" src="data.js">//je charge le document contenant les données à exploiter</script> 
+	
+<script type="text/javascript"> //j'ouvre un nouveau scrip pour créer ma fonction.
+
+var trouverlemot = function(mot, dico)//la fonction prend deux paramètres: le mot à chercher et le dictionnire dasn lequel il faut chercher le mot.
+{
+  liste = [] //je créé une première liste vide pour stocker les mots/clefs.
+  liste2= [] //je créé une deuxièem liste vide pour indiquer à l'utilisateur où se trouve le mot qu'il cherche.
+  for (var cle in dico["text"]){  //pour chaque clef du dictionnaire text
+    if (dico["text"][cle].indexOf(mot) != -1){  //si la clef ne fait pas parti d'un index de mot,
+      liste.push("<l>" + dico["text"][cle] + "</l>") //ajouter la clef à la liste
+      liste2.push("le mot se trouve dans le paragraphe :" + dico["text"][cle].indexOf(mot)) // indiquer dans quelle paragraphe se trouve la cle.
+      }
+    }
+  //  return liste
+    return liste2
+  }
+
+
+alert(trouverlemot("judge", text)); // afficher à l'écran liste2
+
+		
+	</script>
+
+</body>
+</html>
