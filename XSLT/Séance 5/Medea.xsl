@@ -72,9 +72,12 @@
     </xsl:template>
 
     <xsl:template match="speaker">
-        <xsl:element name="speaker">
-            <xsl:value-of select="sp[@who]"/>
-        </xsl:element>
+        <xsl:variable name="ref">
+            <xsl:value-of select="parent::sp/replace(@who, '#', '')"/>
+        </xsl:variable>
+        <xsl:copy>
+            <xsl:value-of select="ancestor::TEI//listPerson/person[@xml:id=$ref]/persName/text()"/>
+        </xsl:copy>
     </xsl:template>
 
 
